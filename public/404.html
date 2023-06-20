@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+</head>
+<body>
+<script>
+    const url = window.location.href;
+    const [_, route] = url.split('#');
+    window.location.replace(`${window.location.origin}/${route}`);
+</script>
+</body>
+</html>

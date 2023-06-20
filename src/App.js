@@ -12,6 +12,7 @@ import {Layout} from "antd";
 import {Content, Footer, Header} from "antd/es/layout/layout";
 import Gallery from "./Pages/Gallery";
 import VideoList from "./Pages/VideoList";
+// import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
