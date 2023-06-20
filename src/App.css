@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+body{
+  overflow-x: hidden;
+
+}
+.home {
+  /*margin-top: 5%;*/
+  background-color: #ffffff;
+  /*margin: auto;*/
+  /*padding: 10px;*/
+
+}
+.cards:hover{
+  opacity: 0.5;
+}
+.name{
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
+.slidein:hover{
+  cursor: pointer;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.carousel,.contactForm,.about-container{
+  margin: auto;
+  padding: 5%;
+}
+.gallery{
+  /*margin-top: 5%;*/
+  padding: 5%;
+}
+.our_services,.abt-me-text{
+  margin: auto;
+  padding: 5%;
+  /*width: 80%;*/
+  /*margin-top: 5%;*/
+}
+.view_gallery, .videos{
+  width: 100%;
+  /*height: 400px;*/
+  padding: 50px;
+  margin-top: 5%;
+  text-align: center;
+  background-color: #fdf6f7;
+}
+.view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn{
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+  background-color: darkblue;
+  color: white;
+  text-transform: uppercase;
+}
+
+.videos{
+  width: 100%;
+  padding: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  /*justify-content: space-evenly;*/
+}
+.VideoList{
+  padding: 5%;
+  background-color: white;
+}
+
+.videos_content{
+  padding-left:20px;
+  margin-left: 10%;
+  text-align: justify;
+}
+
+.films_img{
+  width:850px;
+  height:500px
+}
+
+/*.why_us{*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  width: 100%;*/
+/*  margin: auto;*/
+/*  margin-top: 5%;*/
+/*  padding: 50px;*/
+/*  background-color: #fcf1f4;*/
+/*}*/
+/*.why_content{*/
+/*  !*margin-left: 10%;*!*/
+/*}*/
+/*.why_text{*/
+/*  width: 40%*/
+/*}*/
+
+/*Menu*/
+@media (max-width:500px) {
+  .headerMenu{
+    display: none;
+  }
+.carousel-img-wrapper{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .carousel-img-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+  }
+  .gallery-image:hover {
+    opacity: 0.8;
+  }
+
+  .top-section {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .about__subheading {
+    font-size: 1.5rem;
+  }
+  .about__heading {
+    font-size: 20px;
+
+  }
+  .abt-span {
+    background-color: darkblue;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 25px;
+
+  }
+  .about-container{
+    margin: auto;
+    padding: 5%;
+    text-align: justify;
+  }
+
+}
+@media (min-width:500px) {
+  .menuIcon{
+    display: none;
+  }
+
+
+  /*Gallery image transition*/
+  .gallery-image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5%;
+
+  }
+  .gallery-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+}
+
+/*Card*/
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Set the desired height of the image container */
+}
+
+.card-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: unset; /* or object-fit: cover; based on your preference */
+}
+
+/*Contact Form*/
+.submit-button {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #40a9ff;
+}
+.submit-button:active,
+.submit-button.active {
+  background-color: #096dd9;
+}
+
+.form-item {
+  opacity: 7;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.form-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/*About*/
+.top-section {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+}
+.left {
+  flex: 3;
+}
+.right {
+  flex: 2;
+}
+.about__subheading {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.abt-span {
+  background-color: darkblue;
+  padding: 0.5rem;
+  border-radius: 8px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about__heading {
+  /*font-size: 3.6rem;*/
+  margin-bottom: 3rem;
+}
+.about__info {
+  margin-bottom: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.abt-img {
+  border: 2px solid grey;
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+}
+
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+/*Customer Review*/
+.customer-reviews-container {
+  overflow: auto;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.customer-reviews {
+  display: inline-block;
+  white-space: normal;
+}
+
+.review-card {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1rem;
+  width: 300px;
+  transition: transform 0.3s ease;
+  transform-origin: top center;
+}
+
+.review-card.active {
+  transform: scale(1.1);
+}
+
+/*Footer*/
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.app-footer-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.app-footer-section {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.app-footer-section h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.app-footer-section p {
+  margin-bottom: 0.5rem;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-media-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.app-footer-bottom {
+  background-color: #222;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.app-footer-bottom p {
+  color: #fff;
+  margin: 0;
+}
+
+.contactForm h3{
+  font-style: italic;
+}
+.view_gallery p{
+  font-style: italic;
+}
+.Backbutton{
+  padding: 2%;
+  border-radius: 3px;
+  background-color: #fdf6f7;
+  color: white;
+  text-transform: uppercase;
+}
+.gallery{
+  background-color: white;
 }

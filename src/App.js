@@ -1,24 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Home from "./Pages/Home";
+import Profile from "./Pages/Profile";
+import Footers from "./Components/Footer/Footers";
+import Candid from "./Pages/Candid";
+import Fashion from "./Pages/Fashion";
+import Food from "./Pages/Food.";
+import Wedding from "./Pages/Wedding";
+import BabyShoot from "./Pages/BabyShoot";
+import {Layout} from "antd";
+import {Content, Footer, Header} from "antd/es/layout/layout";
+import Gallery from "./Pages/Gallery";
+import VideoList from "./Pages/VideoList";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          {/*<Navbar />*/}
+          <Layout>
+              <Content>
+                  <Routes>
+                      <Route path="/" element={<Home />} />
+                      {/*<Route path="/about" element={<About />} />*/}
+                      {/*<Route path="/contact" element={<Contact />} />*/}
+                      {/*<Route path="/works" element={<Works />} />*/}
+                      <Route path="/profile" element={<Profile />} />
+                      <Route path="/candid" element={<Candid />} />
+                      <Route path="/fashion" element={<Fashion />} />
+                      <Route path="/food" element={<Food />} />
+                      <Route path="/wedding" element={<Wedding />} />
+                      <Route path="/babyshoot" element={<BabyShoot />} />
+                      <Route path="/gallery" element={<Gallery />} />
+                      <Route path="/films" element={<VideoList />} />
+                  </Routes>
+              </Content>
+              <Footers />
+
+          </Layout>
+
+      </div>
   );
 }
 
