@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import img from "../Images/_SSK2120 (1).jpg";
+import img from "../../public/Images/_SSK2120 (1).jpg";
 import {Col, Modal, Row} from "antd";
 
 const Food = () => {

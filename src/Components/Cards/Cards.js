@@ -1,4 +1,4 @@
-import img from "../../Images/_SSK2120 (1).jpg"
+import img from "../../../public/Images/_SSK2120 (1).jpg"
 // import img1 from "../../Images/_SSK9831.jpg"
 // import fashion from "../../Images/_SSK6726.jpg"
 // import wedding from "../../Images/_SSK9831.jpg"

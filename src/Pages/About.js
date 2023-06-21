@@ -1,4 +1,4 @@
-import img from '../Images/_SSK2120 (1).jpg'
+import img from '../../public/Images/_SSK2120 (1).jpg'
 import ContactForm from "../Components/Form/ContactForm";
 import {Button} from "antd";
 
