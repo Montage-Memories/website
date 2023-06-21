@@ -19,7 +19,7 @@ const contentStyle= {
 
 const Carousels = () => {
     // https://drive.google.com/file/d/1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y/view?usp=sharing
-    const imageUrl = "/https://drive.google.com/uc?id=1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y";
+    const imageUrl = "https://drive.google.com/uc?id=1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y";
     return(
         <div className="slidein">
             <Carousel

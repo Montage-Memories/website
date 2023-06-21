@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../App.css'
-import img from '../../public/Images/_SSK2120 (1).jpg'
+import img from '../Images/_SSK2120 (1).jpg'
 import {Row, Col, Modal} from 'antd';
 import BackButton from "../Components/BackButton/BackButton";
 
