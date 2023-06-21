@@ -4,7 +4,7 @@ import { Button } from 'antd';
 const BackButton = () => {
 
     const goBack = () => {
-        window.location.href = '/';
+        window.location.href = '/website';
     };
 
     return (
