@@ -15,7 +15,7 @@ const Home = () => {
         setShowForm(!showForm);
     };
     const handleOnclick = () => {
-        window.location.href = '/gallery';
+        window.location.href = '/website/gallery';
     }
 
     // const handleOnclickReview = () => {
