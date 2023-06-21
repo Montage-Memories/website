@@ -20,12 +20,12 @@ import Navbar from "./Components/Navbar/Navbar";
 function App() {
   return (
       <div className="App">
-          <Navbar />
+          {/*<Navbar />*/}
           <Layout>
               <Content>
                   <Routes>
                       <Route exact path="/" element={<Home />} />
-                      {/*<Route path="/about" element={<About />} />*/}
+                      <Route path="/website" element={<Home />} />
                       {/*<Route path="/contact" element={<Contact />} />*/}
                       {/*<Route path="/works" element={<Works />} />*/}
                       <Route path="/profile" element={<Profile />} />
