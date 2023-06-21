@@ -12,6 +12,7 @@ import {Layout} from "antd";
 import {Content, Footer, Header} from "antd/es/layout/layout";
 import Gallery from "./Pages/Gallery";
 import VideoList from "./Pages/VideoList";
+import Navbar from "./Components/Navbar/Navbar";
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -19,7 +20,7 @@ import VideoList from "./Pages/VideoList";
 function App() {
   return (
       <div className="App">
-          {/*<Navbar />*/}
+          <Navbar />
           <Layout>
               <Content>
                   <Routes>
