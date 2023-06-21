@@ -7,12 +7,12 @@ const  items=[
         {
             label: "Montage Memories",
             key:"logo",
-            url:'/'
+            url:'/website'
         },
         {
             label: "Home",
             key: "home",
-            url:'/'
+            url:'/website'
         },
         {
             label: "About",

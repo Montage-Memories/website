@@ -6,6 +6,7 @@ import Carousels from "../Components/Carousels/Carousels";
 import About from "./About";
 import Navbar from "../Components/Navbar/Navbar";
 import {useState} from "react";
+import {Link} from "react-router-dom";
 // import CustomerReviews from "../Components/Review/Review";
 // import Video from "../Components/Video/Video";
 const Home = () => {
@@ -14,9 +15,9 @@ const Home = () => {
     const handleOnclickContactButton = () => {
         setShowForm(!showForm);
     };
-    const handleOnclick = () => {
-        window.location.href = '/website/gallery';
-    }
+    // const handleOnclick = () => {
+    //     window.location.href = '/website/gallery';
+    // }
 
     // const handleOnclickReview = () => {
     //     setShowReview(!showReview);
@@ -36,7 +37,9 @@ const Home = () => {
                         <p>
                             "Photography is the art of frozen time... the ability to store emotion and feelings within a frame." - Meshack Otieno
                         </p>
-                        <Button className="view_btn" type="primary" onClick={handleOnclick}>VIEW GALLERY</Button>
+                        <Link to= "/gallery">
+                        <Button className="view_btn" type="primary">VIEW GALLERY</Button>
+                        </Link>
                     </div>
 
                     <div className="our_services" id="works">
