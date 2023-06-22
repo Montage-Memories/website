@@ -378,9 +378,7 @@ body{
   text-transform: uppercase;
 }
 /*img-card*/
-.cards img{
-  height: 250px;
-}
+
 /*.custom-card {*/
 /*  height: 300px; !* Set a fixed height for the card *!*/
 /*  display: flex;*/
