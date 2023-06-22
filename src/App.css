@@ -72,6 +72,8 @@ body{
   text-align: center;
   color: #fdf6f7;
   background-color: black;
+  /*background-color:#fdf6f7;*/
+  /*color: black;*/
 }
 .view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn{
   height: 50px;
@@ -127,8 +129,9 @@ body{
     display: none;
   }
   .NavbarMenu{
-    background-color: white;
-    color: black;
+    background-color:#ffffff;
+    color:black;
+    /*text-transform: uppercase;*/
   }
 .carousel-img-wrapper{
   height: 250px;
@@ -192,19 +195,6 @@ body{
 
 }
 
-/*Card*/
-.card-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px; /* Set the desired height of the image container */
-}
-
-.card-image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: unset; /* or object-fit: cover; based on your preference */
-}
 
 /*Contact Form*/
 .submit-button {
@@ -387,3 +377,23 @@ body{
   color:white;
   text-transform: uppercase;
 }
+/*img-card*/
+.cards img{
+  height: 250px;
+}
+/*.custom-card {*/
+/*  height: 300px; !* Set a fixed height for the card *!*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+/*.card-image-container{*/
+/*  flex: 1;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+/*.img-card{*/
+/*  max-width: 100%;*/
+/*  max-height: 100%;*/
+/*  object-fit: contain;*/
+/*}*/

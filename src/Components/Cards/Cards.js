@@ -9,11 +9,12 @@ import '../../App.css'
 import {Link} from "react-router-dom";
 const { Meta } = Card;
 const Cards = () => {
-
+    const fashion = "https://drive.google.com/uc?id=163uygMwAEhI66YxvkOcOG_-S1WY9rh9m";
+    const wedding = "https://drive.google.com/uc?id=1l1a4aZhAzpUq2TfiyzoA-i9VMt7MetpF";
     const cardData = [
-        { id: 1, title: 'Fashion', imageUrl: img, content: 'Fashion', url:'/fashion' },
+        { id: 1, title: 'Fashion', imageUrl: fashion, content: 'Fashion', url:'/fashion' },
         { id: 2, title: 'Aerial',imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 3, title: 'Wedding', imageUrl: img, content: 'Fashion', url:'/wedding'},
+        { id: 3, title: 'Wedding', imageUrl: wedding, content: 'Fashion', url:'/wedding'},
         { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/portfolio' },
         { id: 5, title: 'Maternity', imageUrl: img, content: 'Fashion', url:'/maternity'},
         { id: 6, title: 'Corporate', imageUrl: img, content: 'Fashion', url:'/fashion'},
