@@ -3,7 +3,7 @@ import img from "../Images/_SSK2120 (1).jpg";
 import {Col, Modal, Row} from "antd";
 import BackButton from "../Components/BackButton/BackButton";
 
-const Wedding = () => {
+const Maternity = () => {
     const [visible, setVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
 
@@ -70,4 +70,4 @@ const Wedding = () => {
     )
 }
 
-export default Wedding;
+export default Maternity;

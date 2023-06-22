@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css'
 import { Row, Col, Card } from 'antd';
 // import video1 from '../Images/Videos/A grand Kongu Wedding _ Witness Love Unfold_ The Naveen & Preethi Story _ Almighty Pictures.mp4'
-// import video2 from '../Images/Videos/Ranjithame _ Wedding Candid Video _ Glimpse _ Varisu _ Cinematic Video _ Salem Wedding.mp4'
-// import video3 from '../Images/Videos/IndhuShansun & Arvind _ Wedding Candid video _ Glimpse _ Marriage _ Coimbatore _ FRAMES BY SARAN.mp4';
+// import video2 from '../Images/Videos/Ranjithame _ Wedding Portfolio Video _ Glimpse _ Varisu _ Cinematic Video _ Salem Wedding.mp4'
+// import video3 from '../Images/Videos/IndhuShansun & Arvind _ Wedding Portfolio video _ Glimpse _ Marriage _ Coimbatore _ FRAMES BY SARAN.mp4';
 import BackButton from "../Components/BackButton/BackButton";
 const VideoList = () => {
     const videos = [

@@ -2,13 +2,10 @@ import {Drawer, Menu} from "antd";
 import {useState} from "react";
 import { MenuOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
+import {Header} from "antd/es/layout/layout";
 
 const  items=[
-        {
-            label: "Montage Memories",
-            key:"logo",
-            url:'/website'
-        },
+
         {
             label: "Home",
             key: "home",
@@ -71,20 +68,23 @@ const Navbar = () => {
 
 function AppMenu({isInline=false}){
     return(
+<Header>
+    <Menu
+        style={{}}
+        mode={isInline?"inline":"horizontal"}
+        className = "NavbarMenu"
+    >
+        {items.map(item => (
+            <Menu.Item key={item.key} icon={item.icon}>
+                {/*<Link to={item.url}>{item.label}</Link>*/}
+                <a href={item.url}>{item.label} </a>
 
-        <Menu
-            style={{ width:"100%",fontsize: "20px", border: "none"}}
-            mode={isInline?"inline":"horizontal"}
-           >
-            {items.map(item => (
-                <Menu.Item key={item.key} icon={item.icon}>
-                    {/*<Link to={item.url}>{item.label}</Link>*/}
-                    <a href={item.url}>{item.label} </a>
+            </Menu.Item>
+        ))}
 
-                </Menu.Item>
-            ))}
+    </Menu>
+</Header>
 
-        </Menu>
     )
 }
 

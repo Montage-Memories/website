@@ -3,9 +3,9 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import Footers from "./Components/Footer/Footers";
-import Candid from "./Pages/Candid";
+import Portfolio from "./Pages/Portfolio";
 import Fashion from "./Pages/Fashion";
-import Food from "./Pages/Food.";
+import Maternity from "./Pages/Maternity";
 import Wedding from "./Pages/Wedding";
 import BabyShoot from "./Pages/BabyShoot";
 import {Layout} from "antd";
@@ -29,9 +29,9 @@ function App() {
                       {/*<Route path="/contact" element={<Contact />} />*/}
                       {/*<Route path="/works" element={<Works />} />*/}
                       <Route path="/profile" element={<Profile />} />
-                      <Route path="/candid" element={<Candid />} />
+                      <Route path="/portfolio" element={<Portfolio />} />
                       <Route path="/fashion" element={<Fashion />} />
-                      <Route path="/food" element={<Food />} />
+                      <Route path="/maternity" element={<Maternity />} />
                       <Route path="/wedding" element={<Wedding />} />
                       <Route path="/babyshoot" element={<BabyShoot />} />
                       <Route path="/gallery" element={<Gallery />} />

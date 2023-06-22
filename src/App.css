@@ -70,7 +70,8 @@ body{
   padding: 50px;
   margin-top: 5%;
   text-align: center;
-  background-color: #fdf6f7;
+  color: #fdf6f7;
+  background-color: black;
 }
 .view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn{
   height: 50px;
@@ -369,4 +370,15 @@ body{
 }
 .gallery{
   background-color: white;
+}
+
+/*Navbar*/
+.NavbarMenu{
+  font-family: Arial;
+  width:100%;
+  font-size: 16px;
+  border: none;
+  background-color:#000000;
+  color:white;
+  text-transform: uppercase;
 }

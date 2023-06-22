@@ -13,12 +13,12 @@ const Cards = () => {
     const cardData = [
         { id: 1, title: 'Fashion', imageUrl: img, content: 'Fashion', url:'/fashion' },
         { id: 2, title: 'Aerial',imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 3, title: 'Wedding', imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/fashion' },
-        { id: 5, title: 'Food Photography', imageUrl: img, content: 'Fashion', url:'/fashion'},
+        { id: 3, title: 'Wedding', imageUrl: img, content: 'Fashion', url:'/wedding'},
+        { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/portfolio' },
+        { id: 5, title: 'Maternity', imageUrl: img, content: 'Fashion', url:'/maternity'},
         { id: 6, title: 'Corporate', imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 7, title: 'Baby Shoot',imageUrl: img, content: 'Fashion', url:'/fashion' },
-        { id: 8, title: 'Product', imageUrl: img, content: 'Fashion', url:'/fashion'},
+        { id: 7, title: 'Baby Shoot',imageUrl: img, content: 'Fashion', url:'/babyshoot' },
+        { id: 8, title: 'Puberty', imageUrl: img, content: 'Fashion', url:'/fashion'},
         // { id: 9, title: 'Card 5', imageUrl: img1, content: 'Fashion', url:'/fashion' },
         // Add more cards as needed
     ];
