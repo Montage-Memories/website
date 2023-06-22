@@ -68,7 +68,6 @@ const Navbar = () => {
 
 function AppMenu({isInline=false}){
     return(
-<Header>
     <Menu
         style={{}}
         mode={isInline?"inline":"horizontal"}
@@ -83,7 +82,7 @@ function AppMenu({isInline=false}){
         ))}
 
     </Menu>
-</Header>
+
 
     )
 }
