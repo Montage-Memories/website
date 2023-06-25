@@ -89,6 +89,7 @@ const Home = () => {
 
                         </h3>
                                 <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>
+
                         {showForm &&(
                             <ContactForm />
                         )}

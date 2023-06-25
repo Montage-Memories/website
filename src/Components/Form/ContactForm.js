@@ -1,6 +1,7 @@
 import {useRef} from "react";
+import '../../App.css';
 import emailjs from '@emailjs/browser';
-import {Button, Form, Image, Input, Typography} from 'antd';
+import {Alert, Button, Form, Image, Input, Typography} from 'antd';
 
 const { Title } = Typography;
 const ContactForm = () => {
@@ -12,7 +13,7 @@ const ContactForm = () => {
         emailjs.send('service_50kt3qe', 'template_vy07som', values, '4Lr4pqMvgfMTrmvs4')
             .then((result) => {
                 console.log(result.text);
-                alert("message sent");
+                <Alert>MESSAGE SENT</Alert>
             }, (error) => {
                 console.log(error.text);
             });
@@ -20,7 +21,7 @@ const ContactForm = () => {
     }
     return(
         <section>
-            <div>
+            <div className="Contact-Form">
                 <Title level={2}>Contact Form</Title>
                 <Form ref={form} className="form-control" onFinish={sendEmail}>
                     <Form.Item name="name">

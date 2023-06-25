@@ -16,17 +16,16 @@ const AppFooter = () => {
                 <Row gutter={[32, 16]}>
                     <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                         <div className="app-footer-section">
-                            <Title level={4}>MONTANGE MEMORIES</Title>
+                            <Title level={4}>MONTAGE MEMORIES</Title>
                             <Text>
                                 Memories By Saran <br />
-                                Capturing cinematic tales of life! <br />
                             </Text>
                         </div>
                     </Col>
-                    <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                         <div className="app-footer-section">
                             <Title level={4}>Contact</Title>
-                            <Text>Email: montangememories@gmail.com</Text>
+                            <Text>Email: montangememories23@gmail.com</Text>
                             <br />
                             <Text>Phone: +91 93844 46512</Text>
                             <br />
@@ -57,9 +56,9 @@ const AppFooter = () => {
                     </Col>
                 </Row>
             </div>
-            <div className="app-footer-bottom">
-                <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>
-            </div>
+            {/*<div className="app-footer-bottom">*/}
+            {/*    <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>*/}
+            {/*</div>*/}
         </Footer>
     );
 };

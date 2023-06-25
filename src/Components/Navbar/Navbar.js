@@ -1,5 +1,6 @@
-import {Drawer, Menu} from "antd";
+import {Drawer, Layout, Menu} from "antd";
 import {useState} from "react";
+import Logo from '../../Images/LOGO.jpg'
 import { MenuOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
 import {Header} from "antd/es/layout/layout";
@@ -9,7 +10,7 @@ const  items=[
         {
             label: "Home",
             key: "home",
-            url:'/website'
+            url:'/'
         },
         {
             label: "About",
@@ -33,7 +34,7 @@ const Navbar = () => {
 
     return(
         <div>
-            <div style = {{}}
+            <div style = {{backgroundColor:"white"}}
             className='menuIcon'
             >
                 <MenuOutlined style={{color:"black", padding:"12px", marginLeft:"85%"}}
@@ -68,23 +69,46 @@ const Navbar = () => {
 
 function AppMenu({isInline=false}){
     return(
-    <Menu
-        style={{}}
-        mode={isInline?"inline":"horizontal"}
-        className = "NavbarMenu"
-    >
-        {items.map(item => (
-            <Menu.Item key={item.key} icon={item.icon}>
-                {/*<Link to={item.url}>{item.label}</Link>*/}
-                <a href={item.url}>{item.label} </a>
+        <div>
+        <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background:"transparent", backgroundColor:"#F0E7E3"}}>
+            <Menu
 
-            </Menu.Item>
-        ))}
+                mode={isInline?"inline":"horizontal"}
+                 className = "NavbarMenu"
+            style={{ display: 'flex', justifyContent: 'flex-end', background:"transparent"}}
+            >
+                {items.map(item => (
+                    <Menu.Item key={item.key} icon={item.icon}  style={{float:"right"}}>
+                        {/*<Link to={item.url}>{item.label}</Link>*/}
+                        <a href={item.url}>{item.label} </a>
 
-    </Menu>
+                    </Menu.Item>
+                ))}
+
+            </Menu>
+        </Header>
+            <div className="mbl-nav">
+                <Menu
+
+                    mode={isInline?"inline":"Horizontal"}
+                    className = "NavbarMenu"
+                    // style={{ display: 'flex', justifyContent: 'flex-end', background:"transparent"}}
+                >
+                    {items.map(item => (
+                        <Menu.Item key={item.key} icon={item.icon}  style={{float:"right"}}>
+                            {/*<Link to={item.url}>{item.label}</Link>*/}
+                            <a href={item.url}>{item.label} </a>
+
+                        </Menu.Item>
+                    ))}
+
+                </Menu>
+            </div>
+        </div>
 
 
     )
+
 }
 
 export default Navbar;

@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const { Meta } = Card;
 const Cards = () => {
     const fashion = "https://drive.google.com/uc?id=163uygMwAEhI66YxvkOcOG_-S1WY9rh9m";
-    const wedding = "https://drive.google.com/uc?id=1l1a4aZhAzpUq2TfiyzoA-i9VMt7MetpF";
+    const wedding = "https://drive.google.com/uc?id=163uygMwAEhI66YxvkOcOG_-S1WY9rh9m";
     const cardData = [
         { id: 1, title: 'Fashion', imageUrl: fashion, content: 'Fashion', url:'/fashion' },
         { id: 2, title: 'Aerial',imageUrl: img, content: 'Fashion', url:'/fashion'},
