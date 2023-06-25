@@ -1,4 +1,4 @@
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import '../../App.css';
 import emailjs from '@emailjs/browser';
 import {Alert, Button, Form, Image, Input, Typography} from 'antd';
@@ -6,16 +6,19 @@ import {Alert, Button, Form, Image, Input, Typography} from 'antd';
 const { Title } = Typography;
 const ContactForm = () => {
     const form = useRef()
-
+    const [showAlert, setShowAlert] = useState(false);
+    const [formFields] = Form.useForm();
     const sendEmail = (values) => {
+
         // values.preventDefault();
 
         emailjs.send('service_50kt3qe', 'template_vy07som', values, '4Lr4pqMvgfMTrmvs4')
             .then((result) => {
                 console.log(result.text);
-                <Alert>MESSAGE SENT</Alert>
+                formFields.resetFields();
+                setShowAlert(true);
             }, (error) => {
-                console.log(error.text);
+                console.log('Error sending email:', error);
             });
         // values.target.reset()
     }
@@ -23,7 +26,7 @@ const ContactForm = () => {
         <section>
             <div className="Contact-Form">
                 <Title level={2}>Contact Form</Title>
-                <Form ref={form} className="form-control" onFinish={sendEmail}>
+                <Form ref={form} form={formFields} className="form-control" onFinish={sendEmail}>
                     <Form.Item name="name">
                         <Input
                             className="form-item"
@@ -62,6 +65,16 @@ const ContactForm = () => {
                    </Form.Item>
 
                 </Form>
+                {showAlert && (
+                    <Alert
+                        message="Email sent successfully"
+                        type="success"
+                        showIcon
+                        closable
+                        onClose={() => setShowAlert(false)}
+                        style={{ position: 'fixed', bottom: 20, right: 20 }}
+                    />
+                )}
             </div>
         </section>
     )

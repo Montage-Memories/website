@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../App.css'
 import img from '../Images/_SSK2120 (1).jpg'
-import {Row, Col, Modal} from 'antd';
+import {Row, Col, Modal, Image, Carousel} from 'antd';
 import BackButton from "../Components/BackButton/BackButton";
 
 const Gallery = () => {
@@ -11,7 +11,7 @@ const Gallery = () => {
 
     const images = [
         img,
-        img,
+        "https://drive.google.com/uc?id=1l1a4aZhAzpUq2TfiyzoA-i9VMt7MetpF",
         img,
         img,
         img,
@@ -44,30 +44,32 @@ const Gallery = () => {
                 <BackButton />
             </div>
 
-            <div className='gallery'>
+            <div className='gallery' >
 
-                <Row gutter={[16, 16]}>
+                <Row >
                     {images.map((image, index) => (
-                        <Col key={index} xs={12} sm={8} md={6} lg={4}>
+
+                            <Col key={index} xs={12} sm={8} md={6} lg={4}>
                             <div
-                                className="gallery-image"
-                                onClick={() => handleImageClick(image)}
-                                onTouchMove={handleTouchMove}
-                                onTouchEnd={handleTouchEnd}
+                                // className="gallery-image"
+                                // onClick={() => handleImageClick(image)}
+                                // onTouchMove={handleTouchMove}
+                                // onTouchEnd={handleTouchEnd}
                             >
-                                <img
+                                <Image
                                     src={image}
                                     alt={`Image ${index + 1}`}
-                                    style={{ width: '100%', height: 'auto' }}
+                                    // preview={}
                                 />
-                            </div>
-                        </Col>
+                             </div>
+                            </Col>
+
                     ))}
                 </Row>
 
-                <Modal visible={visible} onCancel={handleModalClose} footer={null}>
-                    <img src={selectedImage} alt="Full Image" style={{ width: '100%', height: 'auto' }} />
-                </Modal>
+                {/*<Modal visible={visible} onCancel={handleModalClose} footer={null}>*/}
+                {/*    <img src={selectedImage} alt="Full Image" style={{ width: '100%', height: 'auto' }} />*/}
+                {/*</Modal>*/}
             </div>
         </div>
 
