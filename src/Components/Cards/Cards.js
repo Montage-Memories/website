@@ -1,25 +1,40 @@
 import img from "../../Images/_SSK2120 (1).jpg"
-// import img1 from "../../Images/_SSK9831.jpg"
-// import fashion from "../../Images/_SSK6726.jpg"
-// import wedding from "../../Images/_SSK9831.jpg"
-// import portfolio from "../../Images/_SSK4761.jpg"
 import {Card, Col, Row} from 'antd';
 import React from 'react';
 import '../../App.css'
 import {Link} from "react-router-dom";
 const { Meta } = Card;
 const Cards = () => {
-    const fashion = "https://drive.google.com/uc?id=163uygMwAEhI66YxvkOcOG_-S1WY9rh9m";
-    const wedding = "https://drive.google.com/uc?id=163uygMwAEhI66YxvkOcOG_-S1WY9rh9m";
+
     const cardData = [
-        { id: 1, title: 'Fashion', imageUrl: fashion, content: 'Fashion', url:'/fashion' },
-        { id: 2, title: 'Aerial',imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 3, title: 'Wedding', imageUrl: wedding, content: 'Fashion', url:'/wedding'},
-        { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/portfolio' },
-        { id: 5, title: 'Maternity', imageUrl: img, content: 'Fashion', url:'/maternity'},
-        { id: 6, title: 'Corporate', imageUrl: img, content: 'Fashion', url:'/fashion'},
-        { id: 7, title: 'Baby Shoot',imageUrl: img, content: 'Fashion', url:'/babyshoot' },
-        { id: 8, title: 'Puberty', imageUrl: img, content: 'Fashion', url:'/fashion'},
+        {
+            id: 1,
+            imageUrl:"https://drive.google.com/uc?id=126Pdu4YtdPTQlTPPBBUr8SSbTOSkSlkt",
+            title:'Portrait',
+            content: 'In the realm of portraits,' +
+                ' the camera becomes a mirror that reflects ' +
+                'not only physical features but also the essence of a soul',
+            url:'/fashion' },
+        {
+            id: 2,
+            imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
+            title:'Commercial Photography',
+            content: 'Through commercial photography, brands come to life, ' +
+                'creating visual narratives that leave a lasting impression.',
+            url:'/fashion'},
+        {
+            id: 3,
+            imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
+            title:'Kids Photography',
+            content: 'In the world of kids photography, tiny hands, twinkling eyes, ' +
+                'and infectious smiles become the stars of the show',
+            url:'/wedding'},
+        // { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/portfolio' },
+        // { id: 5, title: 'Maternity', imageUrl: img, content: 'Fashion', url:'/maternity'},
+        // { id: 6, title: 'Corporate', imageUrl: img, content: 'Fashion', url:'/fashion'},
+        // { id: 7, title: 'Baby Shoot',imageUrl: img, content: 'Fashion', url:'/babyshoot' },
+        // { id: 8, title: 'Puberty', imageUrl: img, content: 'Fashion', url:'/fashion'},
+        // { id: 9, title: 'Concert', imageUrl: img, content: 'Fashion', url:'/fashion'},
         // { id: 9, title: 'Card 5', imageUrl: img1, content: 'Fashion', url:'/fashion' },
         // Add more cards as needed
     ];
@@ -46,7 +61,7 @@ const Cards = () => {
                 <div className="container reveal">
                     <Row gutter={[16, 16]}>
                         {cardData.map(card => (
-                            <Col xs={12} sm={8} md={6} lg={6} key={card.id}>
+                            <Col xs={24} sm={16} md={16} lg={8} key={card.id}>
                                 {/*<Card title={card.title}>*/}
                                 {/*    <div className="card-image-container">*/}
                                 {/*        <img src={card.imageUrl} alt={card.title} />*/}
@@ -58,11 +73,14 @@ const Cards = () => {
                                                   <img alt="example" src={card.imageUrl}
                                                   />
                                               }
+                                              style={{alignItems:"center"}}
                                         >
-                                            <Meta className="name"
+                                            <Meta className="cards-name"
                                                   title={card.title}
+                                                  style={{textAlign:"center"}}
                                                 // description="This is the description"
                                             />
+                                            <div className="content">{card.content}</div>
                                         </Card>
                                     </Link>
                             </Col>

@@ -7,6 +7,7 @@ import About from "./About";
 import Navbar from "../Components/Navbar/Navbar";
 import {useState} from "react";
 import {Link} from "react-router-dom";
+import Video from "../Components/Video/Video";
 // import CustomerReviews from "../Components/Review/Review";
 // import Video from "../Components/Video/Video";
 const Home = () => {
@@ -50,10 +51,10 @@ const Home = () => {
 
 
 
-                    {/*<div className="videos">*/}
-                    {/*    /!*<img className="films_img" src= {img} />*!/*/}
-                    {/*    <Video />*/}
-                    {/*</div>*/}
+                    <div className="videos">
+                        {/*<img className="films_img" src= {img} />*/}
+                        <Video />
+                    </div>
 
                     <div id="about">
                         {/*<h1 className="abt-me-text">About Me</h1>*/}

@@ -13,9 +13,7 @@ body{
   /*padding: 10px;*/
 
 }
-.cards:hover{
-  opacity: 0.5;
-}
+
 .name{
   font-size: 10px;
 }
@@ -186,8 +184,19 @@ body{
     text-align: justify;
   }
 
+  .thumbnail-video{
+    height: 100px;
+    width :200px;
+  }
+
 }
 @media (min-width:500px) {
+
+  .thumbnail-video{
+    height: 200px;
+    width: 300px;
+  }
+
   .menuIcon{
     display: none;
   }
@@ -422,3 +431,28 @@ body{
 /*  object-fit: contain;*/
 /*}*/
 
+/*cards*/
+.cards-name{
+  text-transform: uppercase;
+}
+.cards{
+  position: relative;
+}
+.cards .content {
+  display: none; /* Initially hide the content */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cards:hover .content {
+  display: block; /* Show the content on hover */
+}

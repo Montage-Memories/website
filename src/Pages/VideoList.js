@@ -10,37 +10,37 @@ const VideoList = () => {
         {
             id: 1,
             title: 'A Grand Kongu Wedding',
-            // url: video1,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 2,
             title: 'Video 2',
-            // url: video2,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 3,
             title: 'Video 2',
-            // url: video3,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 4,
             title: 'Video 2',
-            // url: video2,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 5,
             title: 'Video 2',
-            // url: video1,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 6,
             title: 'Video 2',
-            // url: video2,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         {
             id: 7,
             title: 'Video 2',
-            // url: video2,
+            url: "https://www.youtube.com/embed/zxQ41i8Hu_M",
         },
         // Add more video objects as needed
     ];
@@ -52,14 +52,15 @@ const VideoList = () => {
             </div>
             <div className="VideoList">
                 <h2>Montage Memories</h2>
-                <Row gutter={[16, 16]}>
+                <Row gutter={[12, 12]}>
                     {videos.map((video) => (
-                        <Col key={video.id} xs={24} sm={12} md={8} lg={6} xl={4}>
+                        <Col key={video.id} xs={24} sm={12} md={8} lg={8} xl={8}>
                             <Card
                                 hoverable
-                                cover={<video src={video.url} controls controlsList="nodownload" style={{ width: '100%' }} />}
+                                cover={ <iframe height="150" width="300" src={video.url}/>}
+                                style={{height:"150px", width:"300px"}}
                             >
-                                <Card.Meta title={video.title} />
+                                {/*<Card.Meta title={video.title} />*/}
                             </Card>
                         </Col>
                     ))}
