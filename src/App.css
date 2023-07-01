@@ -6,7 +6,7 @@
 body{
   overflow-x: hidden;
 }
-.home {
+.home, .Portrait-Container, .Commercial-Container, .Kids-Container {
   /*margin-top: 5%;*/
   background-color: #ffffff;
   /*margin: auto;*/
@@ -50,13 +50,14 @@ body{
   transform: translateY(0);
   opacity: 1;
 }
-.contactForm,.about-container{
+.contactForm,.about-container,.Portrait-Container, .Kids-Container{
   margin: auto;
   padding: 5%;
 }
 .carousel{
   margin: auto;
   padding:8%;
+  width: 80%;
 
 }
 
@@ -193,8 +194,8 @@ body{
 @media (min-width:500px) {
 
   .thumbnail-video{
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 500px;
   }
 
   .menuIcon{
@@ -210,7 +211,7 @@ body{
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
-    background-color:#F0E7E3;
+    /*background-color:#F0E7E3;*/
 
   }
 
@@ -226,6 +227,19 @@ body{
   .gallery-image:hover {
     transform: scale(1.1);
     opacity: 0.8;
+  }
+  .carousel-img-wrapper{
+
+    width:70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-img-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
   }
 
 }

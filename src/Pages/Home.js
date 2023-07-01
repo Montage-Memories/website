@@ -25,7 +25,7 @@ const Home = () => {
     // }
     // const imageUrl = "https://drive.google.com/uc?id=1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y";
     return(
-            <div>
+            <div id="home">
                 <Navbar />
 
 

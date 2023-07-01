@@ -12,7 +12,7 @@ const About = () => {
                <div className="right">
                    <img className="abt-img" src={img} alt="person"/>
                </div>
-               <div className="left">
+               <div className="left" style={{marginLeft:"10%"}}>
                    <p className="about__subheading">
                       Hi, I am <span className="abt-span"> Saran Karthick</span>
                    </p>

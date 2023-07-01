@@ -46,7 +46,8 @@ const Fashion = () => {
     return (
         <div>
             <div className="Backbutton">
-                <BackButton />
+                {/*<BackButton />*/}
+                <h1>FASHION PHOTOGRAPHY</h1>
             </div>
             <div className='gallery'>
                 <Row gutter={[16, 16]}>
@@ -61,7 +62,7 @@ const Fashion = () => {
                                 <img
                                     src={image}
                                     alt={`Image ${index + 1}`}
-                                    style={{ width: '100%', height: '300px' }}
+                                    style={{ width: '100%' }}
                                 />
                             </div>
                         </Col>

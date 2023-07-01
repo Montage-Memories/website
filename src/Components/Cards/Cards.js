@@ -14,21 +14,21 @@ const Cards = () => {
             content: 'In the realm of portraits,' +
                 ' the camera becomes a mirror that reflects ' +
                 'not only physical features but also the essence of a soul',
-            url:'/fashion' },
+            url:'/portrait' },
         {
             id: 2,
             imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
             title:'Commercial Photography',
             content: 'Through commercial photography, brands come to life, ' +
                 'creating visual narratives that leave a lasting impression.',
-            url:'/fashion'},
+            url:'/commercial'},
         {
             id: 3,
             imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
             title:'Kids Photography',
             content: 'In the world of kids photography, tiny hands, twinkling eyes, ' +
                 'and infectious smiles become the stars of the show',
-            url:'/wedding'},
+            url:'/kidsphotography'},
         // { id: 4, title: 'Portfolio', imageUrl: img, content: 'Fashion', url:'/portfolio' },
         // { id: 5, title: 'Maternity', imageUrl: img, content: 'Fashion', url:'/maternity'},
         // { id: 6, title: 'Corporate', imageUrl: img, content: 'Fashion', url:'/fashion'},

@@ -34,10 +34,12 @@ const Navbar = () => {
 
     return(
         <div>
-            <div style = {{backgroundColor:"white"}}
+
+            <div style = {{backgroundColor:"white", padding:"8%"}}
             className='menuIcon'
             >
-                <MenuOutlined style={{color:"black", padding:"12px", marginLeft:"85%"}}
+                <img src={Logo} style={{padding: "10px", height:"100%", width:"15%", float:"left"}} />
+                <MenuOutlined style={{color:"black", float:"right",padding:"12px"}}
                               onClick={() => {
                                 setOpenMenu(true);
                 }}
@@ -70,12 +72,13 @@ const Navbar = () => {
 function AppMenu({isInline=false}){
     return(
         <div>
-        <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background:"transparent", backgroundColor:"#F0E7E3"}}>
+        <Header style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%', background:"transparent"}}>
+            <img src={Logo} style={{padding: "10px", height:"100%", width:"6%", float:"left"}} />
             <Menu
 
                 mode={isInline?"inline":"horizontal"}
                  className = "NavbarMenu"
-            style={{ display: 'flex', justifyContent: 'flex-end', background:"transparent"}}
+            style={{ display: 'flex', justifyContent: 'flex-end', background:"transparent", height:"100%"}}
             >
                 {items.map(item => (
                     <Menu.Item key={item.key} icon={item.icon}  style={{float:"right"}}>

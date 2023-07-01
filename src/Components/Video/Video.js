@@ -18,9 +18,9 @@ const Video = () => {
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
                     {/* Video Player */}
                     {/*<video src="https://www.youtube.com/watch?v=zxQ41i8" controls controlsList="nodownload" style={{ width: '100%' }} />*/}
-                    <iframe className='tumbnail-video' src="https://www.youtube.com/embed/zxQ41i8Hu_M "/>
+                    <iframe className='tumbnail-video' height="250px" width="500px" src="https://www.youtube.com/embed/zxQ41i8Hu_M "/>
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
+                <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} >
                     {/* Content and Button */}
                     <div>
                         <h2>FILMS</h2>

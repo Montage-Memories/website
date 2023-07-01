@@ -39,7 +39,8 @@ const Portfolio = () => {
     return (
         <div>
             <div className="Backbutton">
-                <BackButton />
+                {/*<BackButton />*/}
+                <h1>PORTFOLIO PHOTOGRAPHY </h1>
             </div>
             <div className='gallery'>
                 <Row gutter={[16, 16]}>

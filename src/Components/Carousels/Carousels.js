@@ -32,7 +32,7 @@ const Carousels = () => {
                 >
                 <div className="carousel-img-wrapper">
 
-                    <img style={contentStyle} src={imageUrl} />
+                    <img style={contentStyle} src="https://drive.google.com/uc?id=1dBRn1oWMA_hL1nFJrLcrtEsGWs5gufKw" />
                     {/*<div className="carousel-text">*/}
                     {/*    <h3>Slide 1</h3>*/}
 
@@ -40,13 +40,13 @@ const Carousels = () => {
                     {/*</div>*/}
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img style={contentStyle} src={imageUrl}/>
+                    <img style={contentStyle} src="https://drive.google.com/uc?id=1lhnfWDJL-Sv-EFT47Klwci3Ub33nO-ry"/>
                 </div>
                 <div className="carousel-img-wrapper">
                     <img style={contentStyle} src={imageUrl}/>
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img style={contentStyle} src={imageUrl}/>
+                    <img style={contentStyle} src="https://drive.google.com/uc?id=1qhuRQ0na3ipq4HZTJOoY4GRkAkOStQz0"/>
                 </div>
             </Carousel>
 

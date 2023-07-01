@@ -1,7 +1,8 @@
 import React from 'react';
-import { Layout, Row, Col, Typography } from 'antd';
+import {Layout, Row, Col, Typography, Button} from 'antd';
 import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined } from '@ant-design/icons';
 import '../../App.css'
+import {Link} from "react-router-dom";
 const { Footer } = Layout;
 const { Title, Text } = Typography;
 
@@ -14,24 +15,24 @@ const AppFooter = () => {
         <Footer className="app-footer">
             <div className="app-footer-content">
                 <Row gutter={[32, 16]}>
-                    <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                    <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                         <div className="app-footer-section">
-                            <Title level={4}>MONTAGE MEMORIES</Title>
+                            <Title level={3}>MONTAGE MEMORIES</Title>
                             <Text>
                                 Memories By Saran <br />
                             </Text>
                         </div>
                     </Col>
-                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                        <div className="app-footer-section">
-                            <Title level={4}>Contact</Title>
-                            <Text>Email: montangememories23@gmail.com</Text>
-                            <br />
-                            <Text>Phone: +91 93844 46512</Text>
-                            <br />
-                            <Text>Phone: +91 84899 93666</Text>
-                        </div>
-                    </Col>
+                    {/*<Col xs={24} sm={24} md={12} lg={12} xl={12}>*/}
+                    {/*    <div className="app-footer-section">*/}
+                    {/*        <Title level={4}>Contact</Title>*/}
+                    {/*        <Text>Email: montangememories23@gmail.com</Text>*/}
+                    {/*        <br />*/}
+                    {/*        <Text>Phone: +91 93844 46512</Text>*/}
+                    {/*        <br />*/}
+                    {/*        <Text>Phone: +91 84899 93666</Text>*/}
+                    {/*    </div>*/}
+                    {/*</Col>*/}
                     <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                         <div className="app-footer-section">
                             <Title level={4}>Follow Us</Title>
@@ -56,9 +57,9 @@ const AppFooter = () => {
                     </Col>
                 </Row>
             </div>
-            {/*<div className="app-footer-bottom">*/}
-            {/*    <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>*/}
-            {/*</div>*/}
+            <div className="app-footer-bottom">
+                <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>
+            </div>
         </Footer>
     );
 };
