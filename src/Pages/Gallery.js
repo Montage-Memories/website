@@ -6,7 +6,6 @@ import BackButton from "../Components/BackButton/BackButton";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
     const images = [
-        img,
         "https://drive.google.com/uc?id=1l1a4aZhAzpUq2TfiyzoA-i9VMt7MetpF",
         "https://drive.google.com/uc?id=1c-YGujj4RK6DzyXDkgUWsxjH8iG6ZFM5",
         "https://drive.google.com/uc?id=1OX_ZIyie_PchZu8nv-EKv-B5OEkl68s4",
