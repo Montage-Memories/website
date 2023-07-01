@@ -147,7 +147,7 @@ body{
     text-transform: uppercase;
   }
 .carousel-img-wrapper{
-  height: 250px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,17 +185,17 @@ body{
     text-align: justify;
   }
 
-  .thumbnail-video{
-    height: 100px;
-    width :200px;
+  .tumbnail-video{
+    height: 100%;
+    width :90%;
   }
 
 }
 @media (min-width:500px) {
 
-  .thumbnail-video{
-    height: 300px;
-    width: 500px;
+  .tumbnail-video{
+    height:250px;
+    width:80%;
   }
 
   .menuIcon{

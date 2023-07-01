@@ -24,7 +24,7 @@ const Carousels = () => {
         <div className="slidein">
             <Carousel
                 // arrows {...settings}
-                // autoplay={true}
+                autoplay={true}
                 // nextArrow={<NextArrow />}
                 // PreArrow={<PrevArrow />}
                 // dotPosition="none"
@@ -43,7 +43,7 @@ const Carousels = () => {
                     <img style={contentStyle} src="https://drive.google.com/uc?id=1lhnfWDJL-Sv-EFT47Klwci3Ub33nO-ry"/>
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img style={contentStyle} src={imageUrl}/>
+                    <img style={contentStyle} src="https://drive.google.com/uc?id=1B-gqPbF3nZ6o3m7CX46M_698q0e5LaEz"/>
                 </div>
                 <div className="carousel-img-wrapper">
                     <img style={contentStyle} src="https://drive.google.com/uc?id=1qhuRQ0na3ipq4HZTJOoY4GRkAkOStQz0"/>

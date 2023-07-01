@@ -1,4 +1,4 @@
-import img from '../Images/_SSK2120 (1).jpg'
+
 import ContactForm from "../Components/Form/ContactForm";
 import {Button} from "antd";
 
@@ -10,7 +10,7 @@ const About = () => {
         <div className="about-container">
            <div className="top-section">
                <div className="right">
-                   <img className="abt-img" src={img} alt="person"/>
+                   <img className="abt-img" src="https://drive.google.com/uc?id=1M1EoImDXKBq_1S6GbcjO8r7ZagqdCcgF" alt="person"/>
                </div>
                <div className="left" style={{marginLeft:"10%"}}>
                    <p className="about__subheading">
