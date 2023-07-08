@@ -470,3 +470,7 @@ body{
 .cards:hover .content {
   display: block; /* Show the content on hover */
 }
+
+.hidden {
+  display: none;
+}

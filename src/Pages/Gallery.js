@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css'
 import img from '../Images/_SSK2120 (1).jpg'
-import {Row, Col, Modal, Image, Carousel} from 'antd';
+import {Row, Col, Modal, Image, Carousel, Card} from 'antd';
 import BackButton from "../Components/BackButton/BackButton";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
-    const images = [
+
+const images = [
         "https://drive.google.com/uc?id=1l1a4aZhAzpUq2TfiyzoA-i9VMt7MetpF",
         "https://drive.google.com/uc?id=1c-YGujj4RK6DzyXDkgUWsxjH8iG6ZFM5",
         "https://drive.google.com/uc?id=1OX_ZIyie_PchZu8nv-EKv-B5OEkl68s4",
@@ -37,6 +38,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
                                     style={{width: "100%", display: "block"}}
                                 />
                             ))}
+
                         </Masonry>
                     </ResponsiveMasonry>
                 </div>

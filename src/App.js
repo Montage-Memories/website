@@ -16,6 +16,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Portrait from "./Pages/Portrait";
 import KidsPhoto from "./Pages/KidPhoto";
 import Commercial from "./Pages/Commercial";
+import ImageView from "./Pages/ImageView";
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -41,6 +42,7 @@ function App() {
                       <Route path="/films" element={<VideoList />} />
                       <Route path="/portrait" element={<Portrait />} />
                       <Route path="/commercial" element={<Commercial />} />
+                      <Route exact path="/image/:datasetId" element={<ImageView />} />
                   </Routes>
               </Content>
               <Footers />

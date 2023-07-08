@@ -23,7 +23,7 @@ const cardData = [
         title:'Wedding Photography',
         content: 'Through commercial photography, brands come to life, ' +
             'creating visual narratives that leave a lasting impression.',
-        url:'/fashion'},
+        url:'/wedding'},
     // {
     //     id: 3,
     //     imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
