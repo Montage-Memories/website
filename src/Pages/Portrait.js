@@ -11,18 +11,13 @@ import Meta from "antd/es/card/Meta";
 const cardData = [
     {
         id: 1,
-        imageUrl:"https://drive.google.com/uc?id=126Pdu4YtdPTQlTPPBBUr8SSbTOSkSlkt",
+        imageUrl:"https://drive.google.com/uc?id=1kIFa2U4hoLuNW7OUu_P_h9gMHUNAM5pZ",
         title:'Portfolio',
-        content: 'In the realm of portraits,' +
-            ' the camera becomes a mirror that reflects ' +
-            'not only physical features but also the essence of a soul',
         url:'/portfolio' },
     {
         id: 2,
-        imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
+        imageUrl:"https://drive.google.com/uc?id=1i0jbAfRXA8EiYCpsTxAGgMoJx2TQfOZJ",
         title:'Wedding Photography',
-        content: 'Through commercial photography, brands come to life, ' +
-            'creating visual narratives that leave a lasting impression.',
         url:'/wedding'},
     // {
     //     id: 3,
@@ -48,7 +43,7 @@ const Portrait = () => {
                             <Link to= {card.url}>
                                 <Card className="cards"
                                       cover={
-                                          <img alt="example" src={card.imageUrl}
+                                          <img alt="example" src={card.imageUrl} loading="lazy"
                                           />
                                       }
                                       style={{alignItems:"center"}}
@@ -58,7 +53,7 @@ const Portrait = () => {
                                           style={{textAlign:"center"}}
                                         // description="This is the description"
                                     />
-                                    <div className="content">{card.content}</div>
+                                    {/*<div className="content">{card.content}</div>*/}
                                 </Card>
                             </Link>
                         </Col>

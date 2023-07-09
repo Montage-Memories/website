@@ -55,6 +55,7 @@ const Maternity = () => {
                                     src={image}
                                     alt={`Image ${index + 1}`}
                                     style={{ width: '100%', height: 'auto' }}
+                                    loading="lazy"
                                 />
                             </div>
                         </Col>
@@ -62,7 +63,7 @@ const Maternity = () => {
                 </Row>
 
                 <Modal visible={visible} onCancel={handleModalClose} footer={null}>
-                    <img src={selectedImage} alt="Full Image" style={{ width: '100%', height: 'auto' }} />
+                    <img src={selectedImage} alt="Full Image" style={{ width: '100%', height: 'auto' }} loading="lazy" />
                 </Modal>
             </div>
         </div>

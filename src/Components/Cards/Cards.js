@@ -70,7 +70,7 @@ const Cards = () => {
                                     <Link to= {card.url}>
                                         <Card className="cards"
                                               cover={
-                                                  <img alt="example" src={card.imageUrl}
+                                                  <img alt="example" src={card.imageUrl} loading="lazy"
                                                   />
                                               }
                                               style={{alignItems:"center"}}

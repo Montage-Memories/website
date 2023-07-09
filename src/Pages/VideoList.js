@@ -57,7 +57,7 @@ const VideoList = () => {
                         <Col key={video.id} xs={24} sm={12} md={8} lg={8} xl={8}>
                             <Card
                                 hoverable
-                                cover={ <iframe height="150" width="300" src={video.url}/>}
+                                cover={ <iframe loading="lazy" height="150" width="300" src={video.url}/>}
                                 style={{height:"150px", width:"300px"}}
                             >
                                 {/*<Card.Meta title={video.title} />*/}

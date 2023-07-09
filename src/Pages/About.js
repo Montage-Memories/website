@@ -10,7 +10,7 @@ const About = () => {
         <div className="about-container">
            <div className="top-section">
                <div className="right">
-                   <img className="abt-img" src="https://drive.google.com/uc?id=1M1EoImDXKBq_1S6GbcjO8r7ZagqdCcgF" alt="person"/>
+                   <img loading="lazy" className="abt-img" src="https://drive.google.com/uc?id=1M1EoImDXKBq_1S6GbcjO8r7ZagqdCcgF" alt="person"/>
                </div>
                <div className="left" style={{marginLeft:"10%"}}>
                    <p className="about__subheading">

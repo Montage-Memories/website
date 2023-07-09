@@ -9,25 +9,18 @@ import Meta from "antd/es/card/Meta";
 const cardData = [
     {
         id: 1,
-        imageUrl:"https://drive.google.com/uc?id=126Pdu4YtdPTQlTPPBBUr8SSbTOSkSlkt",
+        imageUrl:"https://drive.google.com/uc?id=1FoVm5QfhFkj8lTpmdILnzltpfyIfbEeW",
         title:'Ariel Photography',
-        content: 'In the realm of portraits,' +
-            ' the camera becomes a mirror that reflects ' +
-            'not only physical features but also the essence of a soul',
         url:'/aerial' },
     {
         id: 2,
         imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
         title:'Concert Photography',
-        content: 'Through commercial photography, brands come to life, ' +
-            'creating visual narratives that leave a lasting impression.',
         url:'/concert'},
     {
         id: 3,
-        imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
+        imageUrl: "https://drive.google.com/uc?id=1qhuRQ0na3ipq4HZTJOoY4GRkAkOStQz0",
         title:'Corporate Events',
-        content: 'In the world of kids photography, tiny hands, twinkling eyes, ' +
-            'and infectious smiles become the stars of the show',
         url:'/corporate'},
 
 ];
@@ -47,17 +40,17 @@ const Commercial = () => {
                             <Link to= {card.url}>
                                 <Card className="cards"
                                       cover={
-                                          <img alt="example" src={card.imageUrl}
+                                          <img alt="example" loading="lazy" src={card.imageUrl} height="300px"
                                           />
                                       }
-                                      style={{alignItems:"center"}}
+                                      style={{alignItems:"center", }}
                                 >
                                     <Meta className="cards-name"
                                           title={card.title}
                                           style={{textAlign:"center"}}
                                         // description="This is the description"
                                     />
-                                    <div className="content">{card.content}</div>
+                                    {/*<div className="content">{card.content}</div>*/}
                                 </Card>
                             </Link>
                         </Col>

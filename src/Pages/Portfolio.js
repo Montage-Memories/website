@@ -31,6 +31,7 @@ const Portfolio = () => {
                                 key={i}
                                 src={image}
                                 style={{width: "100%", display: "block"}}
+                                loading="lazy"
                             />
                         ))}
                     </Masonry>

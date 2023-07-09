@@ -9,25 +9,18 @@ import Meta from "antd/es/card/Meta";
 const cardData = [
     {
         id: 1,
-        imageUrl:"https://drive.google.com/uc?id=126Pdu4YtdPTQlTPPBBUr8SSbTOSkSlkt",
+        imageUrl:"https://drive.google.com/uc?id=1UYokpHkVFSF5jfcrqWOsgB_RJHBYB3NZ",
         title:'MATERNITY',
-        content: 'In the realm of portraits,' +
-            ' the camera becomes a mirror that reflects ' +
-            'not only physical features but also the essence of a soul',
         url:'/maternity' },
     {
         id: 2,
-        imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
+        imageUrl:"https://drive.google.com/uc?id=1jIW9NpWXKVP_1G4yASWyZXYRGaoe2Q0q",
         title:'PUBERTY',
-        content: 'Through commercial photography, brands come to life, ' +
-            'creating visual narratives that leave a lasting impression.',
         url:'/puberty'},
     {
         id: 3,
-        imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
+        imageUrl: "https://drive.google.com/uc?id=1nT5LpRbzrxVMTiRM9PX5C8httRv0DurS",
         title:'BABYSHOOT',
-        content: 'In the world of kids photography, tiny hands, twinkling eyes, ' +
-            'and infectious smiles become the stars of the show',
         url:'/babyshoot'},
 
 ];
@@ -47,7 +40,7 @@ const KidsPhoto = () => {
                             <Link to= {card.url}>
                                 <Card className="cards"
                                       cover={
-                                          <img alt="example" src={card.imageUrl}
+                                          <img alt="example" src={card.imageUrl} height="400px" loading="lazy"
                                           />
                                       }
                                       style={{alignItems:"center"}}

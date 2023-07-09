@@ -156,6 +156,7 @@ const ImageView = () => {
                                 key={item.id}
                                 src={item.imageUrl}
                                 style={{width: "100%", display: "block"}}
+                                loading="lazy"
                             />
                         ))}
                              {/*<img key={item.id} src={item.imageUrl} alt="Gallery Image" />*/}
