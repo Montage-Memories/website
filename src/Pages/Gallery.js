@@ -24,12 +24,26 @@ const images = [
         "https://drive.google.com/uc?id=1XBT8xiZ5sAccs-DX8Wp8xf4pnwPtRwh-",
         "https://drive.google.com/uc?id=1GBjPnjtGuzPxhsadHleYeA3ZAVI8XsLg",
         "https://drive.google.com/uc?id=1c-YGujj4RK6DzyXDkgUWsxjH8iG6ZFM5",
+    "https://drive.google.com/uc?id=1Kfgsl--Qx9S3RNHMk2UZLDmyTEIjO3eK",
+    "https://drive.google.com/uc?id=1Cw5jSDY08-3E0Qkb7DEdv36d88fyhyut",
+    "https://drive.google.com/uc?id=1WPdGaOJ9WjsUGDhSbqdeg8-wSRFhbbyN",
+    "https://drive.google.com/uc?id=1JnkIQG9RC_jT7hgcXEAgevdWxh-C1b94",
+    "https://drive.google.com/uc?id=134gZGftfZYkT6uH5OBg6dg90ATWq7Ars",
+    "https://drive.google.com/uc?id=1HhKbz-dJNpU-09Z6DFQxClXtw6dSnvuE",
+    "https://drive.google.com/uc?id=1fTE99Y8jX5BxvugzKi3XPl0lJAk5-7Tw",
+    "https://drive.google.com/uc?id=10lHI7QGV8AdHemG3hHoFMOX3Cumw5wMm",
+    "https://drive.google.com/uc?id=19Y-VkGYgrBapyOMCA3oObd0WBfn4IUMh",
+    "https://drive.google.com/uc?id=1Ape905_LlvXju9vsbUUrkR0vK7X0tqnB",
+    "https://drive.google.com/uc?id=1lg8hYCVtwjkUCDAIV89zayDHlnCBLJtF",
+    "https://drive.google.com/uc?id=19aWQRglsqjB99-9DEyj6X2RynREK8JnA",
+    "https://drive.google.com/uc?id=1EUcHJtTTYa_qyCvp8UND_3f4I4FChTl2",
+    "https://drive.google.com/uc?id=1pveVO7Z3djk734BzepFf8eXqtC7aSOWC"
     ];
 
     const Gallery = () => {
 
             return (
-                <div style={{padding:"5%", backgroundColor:"white"}}>
+                <div style={{padding:"1%", backgroundColor:"white"}}>
                     <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
                         <Masonry columnsCount={3} gutter="10px">
                             {images.map((image, i) => (

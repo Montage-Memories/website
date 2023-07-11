@@ -50,9 +50,12 @@ body{
   transform: translateY(0);
   opacity: 1;
 }
-.contactForm,.about-container,.Portrait-Container, .Kids-Container{
+.contactForm,.about-container{
   margin: auto;
   padding: 5%;
+}
+.Portrait-Container, .Kids-Container, .Commercial-Container{
+  padding: 2%;
 }
 .carousel{
   margin: auto;

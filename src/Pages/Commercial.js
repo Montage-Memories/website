@@ -11,7 +11,7 @@ const cardData = [
         id: 1,
         imageUrl:"https://drive.google.com/uc?id=1FoVm5QfhFkj8lTpmdILnzltpfyIfbEeW",
         title:'Ariel Photography',
-        url:'/aerial' },
+        url:'/ariel' },
     {
         id: 2,
         imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
@@ -27,7 +27,7 @@ const cardData = [
 const Commercial = () => {
     return(
         <div>
-            <div className="Commercial-Container" style={{margin:"auto", padding:"3%"}}>
+            <div className="Commercial-Container" >
                 <h1>COMMERCIAL PHOTOGRAPHY</h1>
                 <Row gutter={[16, 16]}>
                     {cardData.map(card => (
