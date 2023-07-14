@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import img from "../Images/_SSK2120 (1).jpg";
 import {Col, Image, Modal, Row} from "antd";
 import BackButton from "../Components/BackButton/BackButton";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";

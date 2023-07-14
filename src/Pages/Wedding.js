@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "../App.css"
-import img from "../Images/_SSK2120 (1).jpg";
-import {Card, Col, Image, Modal, Row} from "antd";
+import {Card, Col, Row} from "antd";
 import BackButton from "../Components/BackButton/BackButton";
 import { useNavigate} from 'react-router-dom'
 

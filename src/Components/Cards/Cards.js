@@ -1,4 +1,3 @@
-import img from "../../Images/_SSK2120 (1).jpg"
 import {Card, Col, Row} from 'antd';
 import React from 'react';
 import '../../App.css'

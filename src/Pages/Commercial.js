@@ -1,7 +1,6 @@
 import ContactForm from "../Components/Form/ContactForm";
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
-import img from "../Images/_SSK2120 (1).jpg";
 import React from "react";
 import "../App.css"
 import Meta from "antd/es/card/Meta";
