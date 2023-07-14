@@ -156,10 +156,7 @@ body{
   Header{
     display: none;
   }
-  .VideoList{
-    height:100%;
-    width:100%;
-  }
+
   .NavbarMenu{
     background-color:#F0E7E3;
     color:black;
@@ -263,10 +260,7 @@ body{
 .mbl-nav{
   display: none;
 }
-.VideoList{
-  /*height:100%;*/
-  width: 100%;
-}
+
   /*Navbar*/
   .NavbarMenu{
     font-size: 16px;
