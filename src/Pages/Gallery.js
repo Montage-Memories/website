@@ -4,7 +4,7 @@ import img from '../Images/_SSK2120 (1).jpg'
 import {Row, Col, Modal, Image, Carousel, Card} from 'antd';
 import BackButton from "../Components/BackButton/BackButton";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import LazyLoad from 'react-lazy-load';
 
 
 const images = [

@@ -1,17 +1,15 @@
-import ContactForm from "../Components/Form/ContactForm";
+
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
-import img from "../Images/_SSK2120 (1).jpg";
 import React from "react";
-import Fashion from "./Fashion";
-import Portfolio from "./Portfolio";
+import portfolio from  "../Images/Thumbnail/PORTFOLIO THUMB.jpg";
 import "../App.css"
 import Meta from "antd/es/card/Meta";
 
 const cardData = [
     {
         id: 1,
-        imageUrl:"https://drive.google.com/uc?id=1kIFa2U4hoLuNW7OUu_P_h9gMHUNAM5pZ",
+        imageUrl:portfolio,
         title:'Portfolio',
         url:'/portfolio' },
     {
