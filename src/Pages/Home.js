@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import Video from "../Components/Video/Video";
+import Logo from "../Components/Logo";
 // import CustomerReviews from "../Components/Review/Review";
 // import Video from "../Components/Video/Video";
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
     return(
             <div id="home">
                 <Navbar />
-
+                {/*<Logo />*/}
 
                 <div className="home" >
                     <div className="carousel">

@@ -1,6 +1,7 @@
 import {Drawer, Layout, Menu} from "antd";
 import {useState} from "react";
 import Logo from '../../Images/LOGO.jpg'
+import logo from "../../Images/Thumbnail/MMS B.png"
 import { MenuOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
 import {Header} from "antd/es/layout/layout";
@@ -38,7 +39,7 @@ const Navbar = () => {
             <div style = {{backgroundColor:"white", padding:"8%"}}
             className='menuIcon'
             >
-                <img src={Logo} style={{padding: "10px", height:"100%", width:"15%", float:"left"}} />
+                <img src={logo} style={{padding: "10px", height:"100%", width:"25%", float:"left"}} />
                 <MenuOutlined style={{color:"black", float:"right",padding:"12px"}}
                               onClick={() => {
                                 setOpenMenu(true);
@@ -73,7 +74,7 @@ function AppMenu({isInline=false}){
     return(
         <div>
         <Header style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%', background:"transparent"}}>
-            <img src={Logo} style={{padding: "10px", height:"100%", width:"6%", float:"left"}} />
+            <img  src={logo} style={{padding: "10px", height:"100%", width:"8%", float:"left"}} />
             <Menu
 
                 mode={isInline?"inline":"horizontal"}
