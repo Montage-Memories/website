@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e152bf1e.css",
-    "main.js": "/static/js/main.47033676.js",
+    "main.css": "/static/css/main.b4a47ba9.css",
+    "main.js": "/static/js/main.851058ef.js",
     "static/js/787.f055211e.chunk.js": "/static/js/787.f055211e.chunk.js",
     "static/media/WEDDING THUMB.jpg": "/static/media/WEDDING THUMB.0fc3323377c516307867.jpg",
     "static/media/PORTFOLIO THUMB.jpg": "/static/media/PORTFOLIO THUMB.4edbf342724f6c113897.jpg",
@@ -9,6 +9,7 @@
     "static/media/COMMERCIAL PHOTOGRAPHY.jpg": "/static/media/COMMERCIAL PHOTOGRAPHY.ef2eaf1035f76a9ecdeb.jpg",
     "static/media/POTRAIT PHOTOGRAPHY.jpg": "/static/media/POTRAIT PHOTOGRAPHY.147d0a28decf5c575ec2.jpg",
     "static/media/KIDS PHOTOGRAPHY.jpg": "/static/media/KIDS PHOTOGRAPHY.4a75ad759c10e7ebb44a.jpg",
+    "static/media/MMS B.png": "/static/media/MMS B.55f34305c622e619cec3.png",
     "static/media/CARO 4.jpg": "/static/media/CARO 4.b706ebab2b936cf2971b.jpg",
     "static/media/CARO 3.jpg": "/static/media/CARO 3.5a8da8aedf59b8e69a2b.jpg",
     "static/media/CARO 2.jpg": "/static/media/CARO 2.ae1fdbfee22524dd15d1.jpg",
@@ -18,12 +19,12 @@
     "static/media/BABYSHOOT THUMB.jpg": "/static/media/BABYSHOOT THUMB.8e9cbcdd2589e90b88a2.jpg",
     "static/media/PUBERTY THUMB.jpg": "/static/media/PUBERTY THUMB.dc8968e2a2c64295ba1e.jpg",
     "index.html": "/index.html",
-    "main.e152bf1e.css.map": "/static/css/main.e152bf1e.css.map",
-    "main.47033676.js.map": "/static/js/main.47033676.js.map",
+    "main.b4a47ba9.css.map": "/static/css/main.b4a47ba9.css.map",
+    "main.851058ef.js.map": "/static/js/main.851058ef.js.map",
     "787.f055211e.chunk.js.map": "/static/js/787.f055211e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e152bf1e.css",
-    "static/js/main.47033676.js"
+    "static/css/main.b4a47ba9.css",
+    "static/js/main.851058ef.js"
   ]
 }
