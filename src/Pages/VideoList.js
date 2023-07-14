@@ -10,38 +10,38 @@ const VideoList = () => {
         {
             id: 1,
             title: 'A Grand Kongu Wedding',
-            url: "https://www.youtube.com/embed/_vWViTxvOw0 ",
+            url: "https://www.youtube.com/embed/tpj3tiBrUz0",
         },
         {
             id: 2,
             title: 'Video 2',
-            url: "https://www.youtube.com/embed/tpj3tiBrUz0",
+            url: "https://www.youtube.com/embed/gAp9fH7plpE",
         },
         {
             id: 3,
             title: 'Video 2',
-            url: "https://www.youtube.com/embed/MtWUosU-PeI",
+            url: "https://www.youtube.com/embed/5gYS0aBPZjg",
         },
         {
             id: 4,
             title: 'Video 2',
-            url: "https://www.youtube.com/embed/gAp9fH7plpE",
+            url: "https://www.youtube.com/embed/MtWUosU-PeI",
         },
         {
             id: 5,
             title: 'Video 2',
-            url: "https://www.youtube.com/embed/BddX2Bl27q0 ",
+            url: "https://www.youtube.com/embed/MO85XT3zR70",
         },
         {
             id: 6,
             title: 'Video 2',
             url: "https://www.youtube.com/embed/h2_n5mQk1do",
         },
-        {
-            id: 7,
-            title: 'Video 2',
-            url: "https://www.youtube.com/embed/5gYS0aBPZjg",
-        },
+        // {
+        //     id: 7,
+        //     title: 'Video 2',
+        //     url: "https://www.youtube.com/embed/5gYS0aBPZjg",
+        // },
         // Add more video objects as needed
     ];
 

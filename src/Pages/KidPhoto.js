@@ -1,25 +1,27 @@
 import ContactForm from "../Components/Form/ContactForm";
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
-import img from "../Images/_SSK2120 (1).jpg";
 import React from "react";
 import "../App.css"
 import Meta from "antd/es/card/Meta";
+import maternity from "../Images/Thumbnail/MATERNITY THUMB.jpg";
+import puberty from "../Images/Thumbnail/PUBERTY THUMB.jpg";
+import babyshoot from "../Images/Thumbnail/BABYSHOOT THUMB.jpg"
 
 const cardData = [
     {
         id: 1,
-        imageUrl:"https://drive.google.com/uc?id=1UYokpHkVFSF5jfcrqWOsgB_RJHBYB3NZ",
+        imageUrl:maternity,
         title:'MATERNITY',
         url:'/maternity' },
     {
         id: 2,
-        imageUrl:"https://drive.google.com/uc?id=1jIW9NpWXKVP_1G4yASWyZXYRGaoe2Q0q",
+        imageUrl:puberty,
         title:'PUBERTY',
         url:'/puberty'},
     {
         id: 3,
-        imageUrl: "https://drive.google.com/uc?id=1nT5LpRbzrxVMTiRM9PX5C8httRv0DurS",
+        imageUrl: babyshoot,
         title:'BABYSHOOT',
         url:'/babyshoot'},
 

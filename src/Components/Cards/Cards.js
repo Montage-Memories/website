@@ -3,13 +3,18 @@ import {Card, Col, Row} from 'antd';
 import React from 'react';
 import '../../App.css'
 import {Link} from "react-router-dom";
+import portrait from "../../Images/Thumbnail/POTRAIT PHOTOGRAPHY.jpg";
+import commercial from "../../Images/Thumbnail/COMMERCIAL PHOTOGRAPHY.jpg";
+import kids from "../../Images/Thumbnail/KIDS PHOTOGRAPHY.jpg";
+
+
 const { Meta } = Card;
 const Cards = () => {
 
     const cardData = [
         {
             id: 1,
-            imageUrl:"https://drive.google.com/uc?id=126Pdu4YtdPTQlTPPBBUr8SSbTOSkSlkt",
+            imageUrl:portrait,
             title:'Portrait',
             content: 'In the realm of portraits,' +
                 ' the camera becomes a mirror that reflects ' +
@@ -17,14 +22,14 @@ const Cards = () => {
             url:'/portrait' },
         {
             id: 2,
-            imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
+            imageUrl:commercial,
             title:'Commercial Photography',
             content: 'Through commercial photography, brands come to life, ' +
                 'creating visual narratives that leave a lasting impression.',
             url:'/commercial'},
         {
             id: 3,
-            imageUrl: "https://drive.google.com/uc?id=1I1V0lxCeDsbFQByEQJ3GMwnV33gDWAQw",
+            imageUrl: kids,
             title:'Kids Photography',
             content: 'In the world of kids photography, tiny hands, twinkling eyes, ' +
                 'and infectious smiles become the stars of the show',

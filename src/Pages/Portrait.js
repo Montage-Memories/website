@@ -3,6 +3,7 @@ import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
 import React from "react";
 import portfolio from  "../Images/Thumbnail/PORTFOLIO THUMB.jpg";
+import wedding from "../Images/Thumbnail/WEDDING THUMB.jpg";
 import "../App.css"
 import Meta from "antd/es/card/Meta";
 
@@ -14,7 +15,7 @@ const cardData = [
         url:'/portfolio' },
     {
         id: 2,
-        imageUrl:"https://drive.google.com/uc?id=1i0jbAfRXA8EiYCpsTxAGgMoJx2TQfOZJ",
+        imageUrl:wedding,
         title:'Wedding Photography',
         url:'/wedding'},
     // {
