@@ -1,4 +1,4 @@
-import profile from "../Images/Thumbnail/PROFILEPIC.jpg";
+import pro from "../Images/Thumbnail/PROFILEPIC.jpg";
 
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-container" style={{margin:"auto"}}>
            <div className="top-section">
                <div className="right">
-                   <img loading="lazy" className="abt-img" src={profile} alt="person"/>
+                   <img loading="lazy" className="abt-img" src={pro} alt="person"/>
                </div>
                <div className="left" >
                    <p className="about__subheading">
