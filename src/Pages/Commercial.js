@@ -30,7 +30,7 @@ const Commercial = () => {
                 <h1>COMMERCIAL PHOTOGRAPHY</h1>
                 <Row gutter={[16, 16]}>
                     {cardData.map(card => (
-                        <Col xs={24} sm={16} md={16} lg={8} key={card.id}>
+                        <Col xs={24} sm={24} md={24} lg={8} key={card.id}>
                             {/*<Card title={card.title}>*/}
                             {/*    <div className="card-image-container">*/}
                             {/*        <img src={card.imageUrl} alt={card.title} />*/}

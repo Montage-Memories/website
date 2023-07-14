@@ -31,9 +31,10 @@ const Portrait = () => {
     return(
         <div>
             <div className="Portrait-Container" style={{margin:"auto"}}>
+                <h1>PORTRAIT PHOTOGRAPHY</h1>
                 <Row gutter={[16, 16]}>
                     {cardData.map(card => (
-                        <Col xs={24} sm={16} md={16} lg={8} key={card.id}>
+                        <Col xs={24} sm={24} md={12} lg={12} key={card.id}>
                             {/*<Card title={card.title}>*/}
                             {/*    <div className="card-image-container">*/}
                             {/*        <img src={card.imageUrl} alt={card.title} />*/}

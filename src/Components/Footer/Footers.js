@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Layout, Row, Col, Typography, Button} from 'antd';
 import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined } from '@ant-design/icons';
 import '../../App.css'
@@ -60,6 +60,7 @@ const AppFooter = () => {
             <div className="app-footer-bottom">
                 <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>
             </div>
+
         </Footer>
     );
 };

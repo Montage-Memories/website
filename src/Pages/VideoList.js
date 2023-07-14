@@ -47,18 +47,19 @@ const VideoList = () => {
 
     return (
         <div>
-            <div className="Backbutton">
-                <BackButton />
-            </div>
+            {/*<div className="Backbutton">*/}
+            {/*    <BackButton />*/}
+            {/*</div>*/}
             <div className="VideoList" >
-                <h2>Montage Memories</h2>
+                <h1>FILMS</h1>
                 <Row gutter={[12, 12]}>
                     {videos.map((video) => (
-                        <Col key={video.id} xs={24} sm={24} md={8} lg={8} xl={8}>
+                        <Col key={video.id} xs={24} sm={24} md={12} lg={12} xl={12}>
                             <Card
                                 hoverable
-                                cover={ <iframe loading="lazy" height="150" width="300" src={video.url}/>}
-                                style={{height:"150px", width:"300px", margin:"auto"}}
+                                cover={ <iframe loading="lazy" height="400" width="450" src={video.url}/>}
+                                style={{margin:"auto"}}
+                                title={null}
                             >
                                 {/*<Card.Meta title={video.title} />*/}
                             </Card>
