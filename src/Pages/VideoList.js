@@ -50,15 +50,15 @@ const VideoList = () => {
             <div className="Backbutton">
                 <BackButton />
             </div>
-            <div className="VideoList" style={{margin:"auto"}}>
+            <div className="VideoList" >
                 <h2>Montage Memories</h2>
                 <Row gutter={[12, 12]}>
                     {videos.map((video) => (
-                        <Col key={video.id} xs={24} sm={12} md={8} lg={8} xl={8}>
+                        <Col key={video.id} xs={24} sm={24} md={8} lg={8} xl={8}>
                             <Card
                                 hoverable
                                 cover={ <iframe loading="lazy" height="150" width="300" src={video.url}/>}
-                                style={{height:"150px", width:"300px"}}
+                                style={{height:"150px", width:"300px", margin:"auto"}}
                             >
                                 {/*<Card.Meta title={video.title} />*/}
                             </Card>

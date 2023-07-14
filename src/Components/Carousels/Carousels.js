@@ -1,11 +1,11 @@
-// import carousel1 from '../../Images/Carousel/_SSK8762.jpg'
-// import carousel2 from '../../Images/Carousel/P7.jpg'
-// import carousel3 from '../../Images/Carousel/dji_fly_20230309_105838_945_1678341916801_photo.jpg'
-// import carousel4 from '../../Images/Carousel/_SSK9865.jpg'
-import React, {useRef} from 'react';
-import {CaretRightOutlined, CaretLeftFilled, LeftCircleTwoTone} from '@ant-design/icons'
+
+import React, from 'react';
 import '../../App.css'
-import {Button, Carousel} from 'antd';
+import {Carousel} from 'antd';
+import caro1 from "../../Images/Carousel/CARO 2.jpg";
+import caro2 from "../../Images/Carousel/CARO 1.jpg";
+import caro3 from "../../Images/Carousel/CARO 3.jpg";
+import caro4 from "../../Images/Carousel/CARO 4.jpg";
 
 
 const contentStyle= {
@@ -18,21 +18,14 @@ const contentStyle= {
 };
 
 const Carousels = () => {
-    // https://drive.google.com/file/d/1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y/view?usp=sharing
-    const imageUrl = "https://drive.google.com/uc?id=1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y";
     return(
         <div className="slidein">
             <Carousel
-                // arrows {...settings}
                 autoplay={true}
-                // nextArrow={<NextArrow />}
-                // PreArrow={<PrevArrow />}
-                // dotPosition="none"
-                // effect={"fade"}
                 >
                 <div className="carousel-img-wrapper">
 
-                    <img loading="lazy" style={contentStyle} src="https://drive.google.com/uc?id=1dBRn1oWMA_hL1nFJrLcrtEsGWs5gufKw" />
+                    <img loading="lazy" style={contentStyle} src={caro1} />
                     {/*<div className="carousel-text">*/}
                     {/*    <h3>Slide 1</h3>*/}
 
@@ -40,13 +33,13 @@ const Carousels = () => {
                     {/*</div>*/}
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img loading="lazy" style={contentStyle} src="https://drive.google.com/uc?id=1lhnfWDJL-Sv-EFT47Klwci3Ub33nO-ry"/>
+                    <img loading="lazy" style={contentStyle} src={caro2}/>
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img loading="lazy" style={contentStyle} src="https://drive.google.com/uc?id=1B-gqPbF3nZ6o3m7CX46M_698q0e5LaEz"/>
+                    <img loading="lazy" style={contentStyle} src={caro3}/>
                 </div>
                 <div className="carousel-img-wrapper">
-                    <img loading="lazy" style={contentStyle} src="https://drive.google.com/uc?id=1qhuRQ0na3ipq4HZTJOoY4GRkAkOStQz0"/>
+                    <img loading="lazy" style={contentStyle} src={caro4}/>
                 </div>
             </Carousel>
 

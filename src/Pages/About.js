@@ -1,4 +1,4 @@
-import profile from "../Images/_SSK2120 (1).jpg";
+import profile from "../Images/Thumbnail/PROFILEPIC.jpg";
 
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
                <div className="right">
                    <img loading="lazy" className="abt-img" src={profile} alt="person"/>
                </div>
-               <div className="left" style={{marginLeft:"10%"}}>
+               <div className="left" >
                    <p className="about__subheading">
                       Hi, I am <span className="abt-span"> Saran Karthick</span>
                    </p>

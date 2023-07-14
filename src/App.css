@@ -177,14 +177,14 @@ body{
   }
   .abt-span {
     background-color: #F0E7E3;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
     border-radius: 8px;
     font-size: 25px;
 
   }
   .about-container{
-    margin: auto;
-    padding: 5%;
+    /*margin: auto;*/
+    /*padding: 5%;*/
     text-align: justify;
   }
 
@@ -301,7 +301,7 @@ body{
 }
 .abt-span {
   background-color: #F0E7E3;
-  padding: 0.5rem;
+  /*padding: 0.5rem;*/
   border-radius: 8px;
 }
 
