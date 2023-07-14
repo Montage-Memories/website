@@ -269,7 +269,14 @@ body{
     /*background-color:#F0E7E3;*/
 
   }
+  .header {
+    background-color: rgba(255, 255, 255, 1);
+    transition: background-color 0.3s ease;
+  }
 
+  .header.scroll {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as per your preference */
+  }
   /*Carousel prev and next*/
   .carousel-buttons {
     position: absolute;

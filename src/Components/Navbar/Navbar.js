@@ -1,11 +1,12 @@
 import {Drawer, Layout, Menu} from "antd";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Logo from '../../Images/LOGO.jpg'
 import logo from "../../Images/Thumbnail/MMS B.png"
 import { MenuOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
-import {Header} from "antd/es/layout/layout";
+// import {Header} from "antd/es/layout/layout";
 
+const {Header} = Layout;
 const  items=[
 
         {
@@ -71,9 +72,26 @@ const Navbar = () => {
 }
 
 function AppMenu({isInline=false}){
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector('.header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return(
         <div>
-        <Header style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%', background:"transparent"}}>
+        <Header className="header" style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%'}}>
             <img  src={logo} style={{padding: "10px", height:"100%", width:"8%", float:"left"}} />
             <Menu
 
