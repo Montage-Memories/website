@@ -54,10 +54,10 @@ const VideoList = () => {
                 <h1>FILMS</h1>
                 <Row gutter={[12, 12]}>
                     {videos.map((video) => (
-                        <Col key={video.id} xs={24} sm={24} md={12} lg={8} xl={8}>
+                        <Col key={video.id} xs={24} sm={24} md={24} lg={8} xl={8}>
                             <Card
                                 hoverable
-                                cover={ <iframe loading="lazy" height="300" width="250" src={video.url}/>}
+                                cover={ <iframe loading="lazy" height="300" className="VideoList" src={video.url}/>}
                                 style={{margin:"auto"}}
                                 title={null}
                             >
