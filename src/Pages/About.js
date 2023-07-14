@@ -5,7 +5,7 @@ const About = () => {
 
     return(
 
-        <div className="about-container">
+        <div className="about-container" style={{margin:"auto"}}>
            <div className="top-section">
                <div className="right">
                    <img loading="lazy" className="abt-img" src={profile} alt="person"/>

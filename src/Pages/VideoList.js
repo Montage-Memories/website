@@ -50,7 +50,7 @@ const VideoList = () => {
             <div className="Backbutton">
                 <BackButton />
             </div>
-            <div className="VideoList">
+            <div className="VideoList" style={{margin:"auto"}}>
                 <h2>Montage Memories</h2>
                 <Row gutter={[12, 12]}>
                     {videos.map((video) => (
