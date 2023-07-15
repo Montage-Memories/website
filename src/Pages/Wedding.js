@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css"
-import {Col, Row} from "antd";
-import { useNavigate} from 'react-router-dom'
+import {Card, Col, Row} from "antd";
+import {Link, useNavigate} from 'react-router-dom'
 import Masonry from "react-responsive-masonry";
 import p1 from "../Images/Thumbnail/P1.jpg";
 import p2 from "../Images/Thumbnail/P2.jpg";
@@ -24,15 +24,15 @@ const Wedding = ({history}) => {
             {/*    <BackButton />*/}
             {/*</div>*/}
             <div className='gallery'>
-                    <Row gutter={[0, 0]}>
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                            <Masonry className="WeddingCard" onClick={() => handleCardClick('dataset1')}
-                                     columnsCount={1}
-                            > <img loading="lazy" alt="example" src={p1}/></Masonry>
+                    <Row gutter={[16, 16]}>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card className="WeddingCard" onClick={() => handleCardClick('dataset1')}
+                                    cover={<img loading="lazy" alt="example" src={p1}/>}
+                            />
                         </Col>
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                            <Masonry columnsCount={1} className="WeddingCard" onClick={() => handleCardClick('dataset2')}
-                            > <img loading="lazy" alt="example" src={p2}/></Masonry>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card  className="WeddingCard" onClick={() => handleCardClick('dataset2')}
+                            cover={<img loading="lazy" alt="example" src={p2}/>}/>
                         </Col>
                         {/*<Col xs={12} sm={12} md={6} lg={6}>*/}
                         {/*    <Card onClick={() => handleCardClick('dataset3')}*/}
@@ -48,13 +48,13 @@ const Wedding = ({history}) => {
                         {/*          }*/}
                         {/*    ></Card>*/}
                         {/*</Col>*/}
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                            <Masonry columnsCount={1} className="WeddingCard" onClick={() => handleCardClick('dataset5')}
-                            ><img loading="lazy" alt="example" src={p3}/></Masonry>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card className="WeddingCard" onClick={() => handleCardClick('dataset5')}
+                            cover={<img loading="lazy" alt="example" src={p3}/>}/>
                         </Col>
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                            <Masonry columnsCount={1} className="WeddingCard" onClick={() => handleCardClick('dataset6')}
-                            > <img loading="lazy" alt="example" src={p4}/></Masonry>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card className="WeddingCard" onClick={() => handleCardClick('dataset6')}
+                            cover={<img loading="lazy" alt="example" src={p4}/>}/>
                         </Col>
 
                         {/*<Col xs={12} sm={12} md={6} lg={6}>*/}
@@ -78,9 +78,9 @@ const Wedding = ({history}) => {
                         {/*          }*/}
                         {/*    ></Card>*/}
                         {/*</Col>*/}
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                            <Masonry columnsCount={1} className="WeddingCard" onClick={() => handleCardClick('dataset11')}
-                            > <img loading="lazy" alt="example" src={p5}/></Masonry>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card className="WeddingCard" onClick={() => handleCardClick('dataset11')}
+                            cover={<img loading="lazy" alt="example" src={p5}/>} />
                         </Col>
                         {/*<Col xs={12} sm={12} md={6} lg={6}>*/}
                         {/*    <Card onClick={() => handleCardClick('dataset12')}*/}
@@ -90,10 +90,8 @@ const Wedding = ({history}) => {
                         {/*    ></Card>*/}
                         {/*</Col>*/}
 
-                        <Col xs={12} sm={12} md={8} lg={8}>
-                        <Masonry columnsCount={1} className="WeddingCard" onClick={() => handleCardClick('dataset14')}
-
-                        ><img loading="lazy"  alt="example" src={p6}/></Masonry>
+                        <Col xs={24} sm={12} md={8} lg={8}>
+                            <Card className="WeddingCard" onClick={() => handleCardClick('dataset14')} cover={<img loading="lazy"  alt="example" src={p6}/>}></Card>
                     </Col>
                     {/*    <Col xs={12} sm={12} md={6} lg={6}>*/}
                     {/*    <Card onClick={() => handleCardClick('dataset15')}*/}
