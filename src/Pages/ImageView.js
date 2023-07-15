@@ -106,9 +106,9 @@ const ImageView = () => {
         selectedDataset = dataset14;
     }
     return (
-        <div>
+        <div style={{margin:"auto",padding:"2%"}}>
                 <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
-                    <Masonry columnsCount={3} gutter="10px">
+                    <Masonry columnsCount={3} gutter="0px">
                         {selectedDataset.map((item) => (
                             <Image
                                 key={item.id}
