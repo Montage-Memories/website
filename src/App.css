@@ -558,3 +558,7 @@ body{
 .hidden {
   display: none;
 }
+
+.WeddingCard:hover{
+  opacity: 0.5;
+}
