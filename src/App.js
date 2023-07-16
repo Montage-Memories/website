@@ -24,6 +24,7 @@ import Babyshoot from "./Pages/Babyshoot";
 
 
 function App() {
+
   return (
       <div className="App">
           {/*<Navbar />*/}
@@ -52,7 +53,8 @@ function App() {
                       <Route exact path="/image/:datasetId" element={<ImageView />} />
                   </Routes>
               </Content>
-              <Footers />
+
+                  <Footers />
 
           </Layout>
 

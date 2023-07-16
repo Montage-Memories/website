@@ -37,7 +37,7 @@ const AppFooter = () => {
                         <div className="app-footer-section">
                             <Title level={4}>Follow Us</Title>
                             <div className="social-media-links">
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/montagememories23?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                                     <FacebookOutlined />
                                 </a>
                                 {/*<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">*/}

@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import '../App.css'
-import {Row, Col, Modal, Image, Carousel, Card} from 'antd';
-import BackButton from "../Components/BackButton/BackButton";
+import {Image} from 'antd';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 
@@ -40,10 +39,9 @@ const images = [
     ];
 
     const Gallery = () => {
-
             return (
-                <div style={{padding:"1%", backgroundColor:"white"}}>
-                    <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
+                <div style={{padding:"1%", backgroundColor:"white", margin:"auto"}}>
+                  <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
                         <Masonry columnsCount={3} gutter="10px">
                             {images.map((image, i) => (
                                 <Image
@@ -56,6 +54,7 @@ const images = [
 
                         </Masonry>
                     </ResponsiveMasonry>
+
                 </div>
 
 

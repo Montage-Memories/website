@@ -30,7 +30,7 @@ const cardData = [
 const Portrait = () => {
     return(
         <div>
-            <div className="Portrait-Container" style={{margin:"auto"}}>
+            <div className="Portrait-Container" style={{margin:"auto", height:"100%"}}>
                 <h1>PORTRAIT PHOTOGRAPHY</h1>
                 <Row gutter={[16, 16]}>
                     {cardData.map(card => (
