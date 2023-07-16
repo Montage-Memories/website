@@ -1,7 +1,7 @@
 
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useEffect} from "react";
 import portfolio from  "../Images/Thumbnail/PORTFOLIO THUMB.jpg";
 import wedding from "../Images/Thumbnail/WEDDING THUMB.jpg";
 import "../App.css"
@@ -28,7 +28,18 @@ const cardData = [
 
 ];
 const Portrait = () => {
-    return(
+    useEffect(() => {
+        const handleScroll = () => {
+            window.scrollTo(0, 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+        return(
         <div>
             <div className="Portrait-Container" style={{margin:"auto", height:"100%"}}>
                 <h1>PORTRAIT PHOTOGRAPHY</h1>

@@ -1,7 +1,7 @@
 import ContactForm from "../Components/Form/ContactForm";
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useEffect} from "react";
 import "../App.css"
 import Meta from "antd/es/card/Meta";
 import maternity from "../Images/Thumbnail/MATERNITY THUMB.jpg";
@@ -27,6 +27,17 @@ const cardData = [
 
 ];
 const KidsPhoto = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            window.scrollTo(0, 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return(
         <div>
             <div className="Kids-Container">

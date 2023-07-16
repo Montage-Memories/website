@@ -6,7 +6,7 @@ import Portfolio from "./Pages/Portfolio";
 import Fashion from "./Pages/Fashion";
 import Maternity from "./Pages/Maternity";
 import Wedding from "./Pages/Wedding";
-import {Layout} from "antd";
+import {Button, Layout} from "antd";
 import {Content, Footer, Header} from "antd/es/layout/layout";
 import Gallery from "./Pages/Gallery";
 import VideoList from "./Pages/VideoList";
@@ -19,12 +19,18 @@ import Concert from "./Pages/Concert";
 import Corporate from "./Pages/Corporate";
 import Puberty from "./Pages/Puberty";
 import Babyshoot from "./Pages/Babyshoot";
+import ContactForm from "./Components/Form/ContactForm";
+import {useState} from "react";
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
 function App() {
-
+    const [showForm, setShowForm] = useState(false);
+    // const [showReview, setShowReview] = useState(false);
+    const handleOnclickContactButton = () => {
+        setShowForm(!showForm);
+    };
   return (
       <div className="App">
           {/*<Navbar />*/}
@@ -54,6 +60,20 @@ function App() {
                   </Routes>
               </Content>
 
+              <div style={{backgroundColor: "white"}}>
+                  <div className="contactForm" id="contact">
+                      <h3><i>
+                          For Queries and Claim Quote
+                      </i>
+
+                      </h3>
+                      <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>
+
+                      {showForm &&(
+                          <ContactForm />
+                      )}
+                  </div>
+              </div>
                   <Footers />
 
           </Layout>

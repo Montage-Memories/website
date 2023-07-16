@@ -12,11 +12,11 @@ import Logo from "../Components/Logo";
 // import CustomerReviews from "../Components/Review/Review";
 // import Video from "../Components/Video/Video";
 const Home = () => {
-    const [showForm, setShowForm] = useState(false);
-    // const [showReview, setShowReview] = useState(false);
-    const handleOnclickContactButton = () => {
-        setShowForm(!showForm);
-    };
+    // const [showForm, setShowForm] = useState(false);
+    // // const [showReview, setShowReview] = useState(false);
+    // const handleOnclickContactButton = () => {
+    //     setShowForm(!showForm);
+    // };
     // const handleOnclick = () => {
     //     window.location.href = '/website/gallery';
     // }
@@ -84,18 +84,18 @@ const Home = () => {
 
 
 
-                    <div className="contactForm" id="contact">
-                        <h3><i>
-                            For Queries and Claim Quote
-                        </i>
+                    {/*<div className="contactForm" id="contact">*/}
+                    {/*    <h3><i>*/}
+                    {/*        For Queries and Claim Quote*/}
+                    {/*    </i>*/}
 
-                        </h3>
-                                <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>
+                    {/*    </h3>*/}
+                    {/*            <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>*/}
 
-                        {showForm &&(
-                            <ContactForm />
-                        )}
-                    </div>
+                    {/*    {showForm &&(*/}
+                    {/*        <ContactForm />*/}
+                    {/*    )}*/}
+                    {/*</div>*/}
 
                 </div>
             </div>
