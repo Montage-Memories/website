@@ -1,10 +1,22 @@
 import {useRef, useState} from "react";
 import '../../App.css';
 import emailjs from '@emailjs/browser';
-import {Alert, Button, Form, Image, Input, Typography} from 'antd';
+import {Alert, Button, Form, Image, Input, Modal, Typography} from 'antd';
 
 const { Title } = Typography;
 const ContactForm = () => {
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
     const form = useRef()
     const [showAlert, setShowAlert] = useState(false);
     const [formFields] = Form.useForm();
@@ -17,6 +29,7 @@ const ContactForm = () => {
                 console.log(result.text);
                 formFields.resetFields();
                 setShowAlert(true);
+                setIsModalVisible(false);
             }, (error) => {
                 console.log('Error sending email:', error);
             });
@@ -25,7 +38,14 @@ const ContactForm = () => {
     return(
         <section>
             <div className="Contact-Form">
-                <Title level={2}>Contact Form</Title>
+                <Button style={{marginLeft:"100%"}} type="primary" className="contact_btn" onClick={showModal}>
+                    FOR ENQUIRY
+                </Button>
+
+                <Modal  title="CONTACT FORM"
+                        visible={isModalVisible}
+                        onCancel={handleCancel}
+                footer={null}>
                 <Form ref={form} form={formFields} className="form-control" onFinish={sendEmail}>
                     <Form.Item name="name">
                         <Input
@@ -65,6 +85,7 @@ const ContactForm = () => {
                    </Form.Item>
 
                 </Form>
+                </Modal>
                 {showAlert && (
                     <Alert
                         message="Email sent successfully"

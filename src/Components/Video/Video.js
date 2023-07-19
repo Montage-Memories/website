@@ -14,7 +14,7 @@ const Video = () => {
     };
 
     return (
-            <Row  gutter={[16, 16]}>
+            <Row  gutter={[16, 16]} style={{margin:"auto", width:"100%", }}>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
                     {/* Video Player */}
                     {/*<video src="https://www.youtube.com/watch?v=zxQ41i8" controls controlsList="nodownload" style={{ width: '100%' }} />*/}

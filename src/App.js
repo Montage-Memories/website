@@ -21,16 +21,12 @@ import Puberty from "./Pages/Puberty";
 import Babyshoot from "./Pages/Babyshoot";
 import ContactForm from "./Components/Form/ContactForm";
 import {useState} from "react";
+import About from "./Pages/About";
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
 function App() {
-    const [showForm, setShowForm] = useState(false);
-    // const [showReview, setShowReview] = useState(false);
-    const handleOnclickContactButton = () => {
-        setShowForm(!showForm);
-    };
   return (
       <div className="App">
           {/*<Navbar />*/}
@@ -38,7 +34,7 @@ function App() {
               <Content>
                   <Routes>
                       <Route exact path="/" element={<Home />} />
-                      {/*<Route path="/website" element={<Home />} />*/}
+                      <Route path="/about" element={<About />} />
                       {/*<Route path="/contact" element={<Contact />} />*/}
                       {/*<Route path="/works" element={<Works />} />*/}
                       {/*<Route path="/profile" element={<Profile />} />*/}
@@ -62,16 +58,7 @@ function App() {
 
               <div style={{backgroundColor: "white"}}>
                   <div className="contactForm" id="contact">
-                      <h3><i>
-                          For Queries and Claim Quote
-                      </i>
-
-                      </h3>
-                      <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>
-
-                      {showForm &&(
-                          <ContactForm />
-                      )}
+                        <ContactForm />
                   </div>
               </div>
                   <Footers />

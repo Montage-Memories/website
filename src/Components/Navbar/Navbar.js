@@ -17,7 +17,7 @@ const  items=[
         {
             label: "About",
             key: "about",
-            url:'#about'
+            url:'/about'
         },
         {
             label: "Works",
@@ -89,18 +89,26 @@ function AppMenu({isInline=false}){
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const [selectedItem, setSelectedItem] = useState(null);
     return(
         <div>
         <Header className="header" style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%'}}>
             <img  src={logo} style={{padding: "10px", height:"100%", width:"8%", float:"left"}} />
             <Menu
-
+                theme={"dark"}
                 mode={isInline?"inline":"horizontal"}
                  className = "NavbarMenu"
             style={{ display: 'flex', justifyContent: 'flex-end', background:"transparent", height:"100%"}}
             >
                 {items.map(item => (
-                    <Menu.Item key={item.key} icon={item.icon}  style={{float:"right"}}>
+                    <Menu.Item  key={item.key}
+                                // icon={item.icon}
+                        style={{color:"black"}}
+                                className={selectedItem === item.key ? "selected" : ""}
+                                onMouseEnter={() => setSelectedItem(item.key)}
+                                onMouseLeave={() => setSelectedItem(null)}
+                              >
                         {/*<Link to={item.url}>{item.label}</Link>*/}
                         <a href={item.url}>{item.label} </a>
 

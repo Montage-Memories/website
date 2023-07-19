@@ -9,11 +9,12 @@ import {useState} from "react";
 import {Link} from "react-router-dom";
 import Video from "../Components/Video/Video";
 import Logo from "../Components/Logo";
+import Reviews from "../Components/Reviews/Reviews";
 // import CustomerReviews from "../Components/Review/Review";
 // import Video from "../Components/Video/Video";
 const Home = () => {
     // const [showForm, setShowForm] = useState(false);
-    // // const [showReview, setShowReview] = useState(false);
+    // const [showReview, setShowReview] = useState(false);
     // const handleOnclickContactButton = () => {
     //     setShowForm(!showForm);
     // };
@@ -57,24 +58,30 @@ const Home = () => {
                         <Video />
                     </div>
 
-                    <div id="about">
-                        {/*<h1 className="abt-me-text">About Me</h1>*/}
-                        <About />
-                    </div>
-
-                    {/*<div className="why_us">*/}
-                    {/*    <h1 className="why_text">WHY US?</h1>*/}
-                    {/*    <div>*/}
-                    {/*        <h6 className="why_content">We’ve had the same question,*/}
-                    {/*            as to how people have continuously loved us over the years.*/}
-                    {/*            We reached out to them and asked what made us special.*/}
-                    {/*            And the answers were encouraging.*/}
-                    {/*            Give it a read.</h6>*/}
-                    {/*        <div>*/}
-                    {/*            <Button className="view_review_btn" type="primary" onClick={handleOnclickReview}>{showReview ? 'Close Review' : 'View Review'}</Button>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
+                    {/*<div id="about">*/}
+                    {/*    /!*<h1 className="abt-me-text">About Me</h1>*!/*/}
+                    {/*    <About />*/}
                     {/*</div>*/}
+
+
+
+                    {/*<div className="why_us" style={{padding:"2%"}}>*/}
+
+                        {/*<div>*/}
+                        {/*    <h6 className="why_content">We’ve had the same question,*/}
+                        {/*        as to how people have continuously loved us over the years.*/}
+                        {/*        We reached out to them and asked what made us special.*/}
+                        {/*        And the answers were encouraging.*/}
+                        {/*        Give it a read.</h6>*/}
+                            {/*<div>*/}
+                            {/*    <Button className="view_review_btn" type="primary" onClick={handleOnclickReview}>{showReview ? 'Close Review' : 'View Review'}</Button>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    <div>
+                        <h1 className="why_text">What customer say about us ?</h1>
+                        <Reviews />
+                    </div>
 
                     {/*<div>*/}
                     {/*    {showReview &&(*/}
