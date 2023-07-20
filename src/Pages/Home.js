@@ -10,8 +10,8 @@ import Reviews from "../Components/Reviews/Reviews";
 const Home = () => {
 
     return(
-            <div id="home">
-                <Navbar />
+            <div>
+                {/*<Navbar />*/}
 
                 <div className="home" >
                     <div className="carousel">
@@ -27,7 +27,7 @@ const Home = () => {
                         </Link>
                     </div>
 
-                    <div className="our_services" id="works">
+                    <div className="our_services" >
                         <h1> OUR SERVICES </h1>
                         <Cards />
                     </div>

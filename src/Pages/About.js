@@ -28,9 +28,9 @@ const About = () => {
     window.addEventListener("scroll", reveal);
     return(
 
-        <div style={{margin:"auto",backgroundColor:"#ffffff"}}>
+        <div className="abt-cont" style={{margin:"auto",backgroundColor:"#ffffff"}}>
            <div >
-               <h1 style={{backgroundColor:"#000000", color:"#ffffff",textAlign:"center"}} className="about-us-text" >ABOUT US</h1>
+               <p style={{backgroundColor:"#000000", color:"#ffffff",textAlign:"center"}} className="about-us-text" >ABOUT US</p>
             </div><br />
             <div style={{textAlign:"center", paddingTop:"3%"}}>
                 <img className="Abt-logo" src={Logo} alt="Logo"/>

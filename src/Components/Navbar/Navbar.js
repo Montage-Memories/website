@@ -22,12 +22,12 @@ const  items=[
         {
             label: "Works",
             key: "works",
-            url:'#works'
+            url:'/works'
         },
         {
             label: "Contact",
             key: "contact",
-            url:'#contact'
+            url:'/contact'
         }
 ]
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
             <div style = {{backgroundColor:"#ffffff", opacity:"0.8",position:"fixed", zIndex:"1", padding:"3%"}}
             className='menuIcon'
             >
-                <img src={logo} style={{padding: "10px", height:"100%", width:"25%", float:"left"}} />
+                <img src={logo} style={{padding: "10px", height:"100%", width:"20%", float:"left"}} />
                 <MenuOutlined style={{color:"black",fontSize:"30px", float:"right",padding:"12px"}}
                               onClick={() => {
                                 setOpenMenu(true);

@@ -22,6 +22,9 @@ import Babyshoot from "./Pages/Babyshoot";
 import ContactForm from "./Components/Form/ContactForm";
 import {useState} from "react";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Navbar from "./Components/Navbar/Navbar";
+import Works from "./Pages/Works";
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -29,14 +32,14 @@ import About from "./Pages/About";
 function App() {
   return (
       <div className="App">
-          {/*<Navbar />*/}
+          <Navbar />
           <Layout>
               <Content>
                   <Routes>
                       <Route exact path="/" element={<Home />} />
                       <Route path="/about" element={<About />} />
-                      {/*<Route path="/contact" element={<Contact />} />*/}
-                      {/*<Route path="/works" element={<Works />} />*/}
+                      <Route path="/contact" element={<Contact />} />
+                      <Route path="/works" element={<Works />} />
                       {/*<Route path="/profile" element={<Profile />} />*/}
                       <Route path="/portfolio" element={<Portfolio />} />
                       <Route path="/fashion" element={<Fashion />} />
