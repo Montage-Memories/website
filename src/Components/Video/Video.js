@@ -23,7 +23,7 @@ const Video = () => {
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} >
                     {/* Content and Button */}
                     <div>
-                        <h2>FILMS</h2>
+                        <h2 className="films-text">FILMS</h2>
                         <p>We invite you to lose yourself in the visual symphony of our portfolio,
                             where every video composition is a melodic masterpiece.</p>
                         <Button className='watch_btn' type="primary" onClick={handleWatch}>Watch Us</Button>

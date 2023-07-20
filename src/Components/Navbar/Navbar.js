@@ -37,11 +37,11 @@ const Navbar = () => {
     return(
         <div>
 
-            <div style = {{backgroundColor:"white", padding:"8%"}}
+            <div style = {{backgroundColor:"#ffffff", opacity:"0.8",position:"fixed", zIndex:"1", padding:"3%"}}
             className='menuIcon'
             >
                 <img src={logo} style={{padding: "10px", height:"100%", width:"25%", float:"left"}} />
-                <MenuOutlined style={{color:"black", float:"right",padding:"12px"}}
+                <MenuOutlined style={{color:"black",fontSize:"30px", float:"right",padding:"12px"}}
                               onClick={() => {
                                 setOpenMenu(true);
                 }}

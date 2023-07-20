@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'antd';
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import {LeftOutlined,RightOutlined } from '@ant-design/icons';
 
 const Reviews = () => {
     const reviews = [
@@ -72,31 +72,31 @@ const Reviews = () => {
     };
 
     return (
-        <div className="reviews-container">
-            <Row justify="center" align="middle" gutter={[38, 38]}>
-                <Col xs={4} sm={4} md={8} lg={1} xl={1}>
-                    <ArrowLeftOutlined className="arrow-icon" onClick={handlePreviousCard} />
+        <div className="reviews-container" style={{margin:"auto"}}>
+            <Row justify="center" align="middle" gutter={[20, 20]}>
+                <Col xs={1} sm={1} md={8} lg={1} xl={1}>
+                    <LeftOutlined className="arrow-icon" onClick={handlePreviousCard} />
                 </Col>
-                <Col xs={16} sm={16} md={8} lg={6} xl={6}>
+                <Col xs={16} sm={18} md={8} lg={8} xl={8}>
                     <Card className={`card ${currentCard === 0 ? 'card-current' : ''}`}>
                         <h3>{reviews[(currentCard - 1 + reviews.length) % reviews.length].author}</h3>
                         <p>{reviews[(currentCard - 1 + reviews.length) % reviews.length].comment}</p>
                     </Card>
                 </Col>
-                <Col xs={0} sm={0} md={6} lg={8} xl={6}>
+                <Col xs={0} sm={0} md={6} lg={0} xl={0}>
                     <Card style={{}}  className={`card ${currentCard === 0 ? 'card-current' : ''} `}>
                         <h3>{reviews[currentCard].author}</h3>
                         <p>{reviews[currentCard].comment}</p>
                     </Card>
                 </Col>
-                <Col xs={0} sm={0} md={8} lg={6} xl={6}>
+                <Col xs={0} sm={0} md={8} lg={0} xl={0}>
                     <Card className={`card ${currentCard === 0 ? 'card-current' : ''}`}>
                         <h3>{reviews[(currentCard + 1) % reviews.length].author}</h3>
                         <p>{reviews[(currentCard + 1) % reviews.length].comment}</p>
                     </Card>
                 </Col>
-                <Col xs={4} sm={4} md={8} lg={1} xl={1}>
-                    <ArrowRightOutlined className="arrow-icon" onClick={handleNextCard} />
+                <Col xs={1} sm={1} md={8} lg={1} xl={1}>
+                    <RightOutlined className="arrow-icon" onClick={handleNextCard} />
                 </Col>
             </Row>
         </div>

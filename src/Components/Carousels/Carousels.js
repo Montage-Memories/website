@@ -31,6 +31,7 @@ const Carousels = () => {
     return(
         <div className="slidein">
             <Carousel
+                className="Top-carousel"
                 autoplay={true}
                 autoplaySpeed={2000}
                 dots={false}

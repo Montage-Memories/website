@@ -1,35 +1,17 @@
 import '../App.css'
 import Cards from "../Components/Cards/Cards";
 import {Button} from "antd";
-import ContactForm from "../Components/Form/ContactForm";
 import Carousels from "../Components/Carousels/Carousels";
-import About from "./About";
 import Navbar from "../Components/Navbar/Navbar";
-import {useState} from "react";
 import {Link} from "react-router-dom";
 import Video from "../Components/Video/Video";
-import Logo from "../Components/Logo";
 import Reviews from "../Components/Reviews/Reviews";
-// import CustomerReviews from "../Components/Review/Review";
-// import Video from "../Components/Video/Video";
-const Home = () => {
-    // const [showForm, setShowForm] = useState(false);
-    // const [showReview, setShowReview] = useState(false);
-    // const handleOnclickContactButton = () => {
-    //     setShowForm(!showForm);
-    // };
-    // const handleOnclick = () => {
-    //     window.location.href = '/website/gallery';
-    // }
 
-    // const handleOnclickReview = () => {
-    //     setShowReview(!showReview);
-    // }
-    // const imageUrl = "https://drive.google.com/uc?id=1pbm6EyZ_bQDOaj3UQmB1VPRiXzjjhO7Y";
+const Home = () => {
+
     return(
             <div id="home">
                 <Navbar />
-                {/*<Logo />*/}
 
                 <div className="home" >
                     <div className="carousel">
@@ -50,9 +32,6 @@ const Home = () => {
                         <Cards />
                     </div>
 
-
-
-
                     <div className="videos">
                         {/*<img className="films_img" src= {img} />*/}
                         <Video />
@@ -62,8 +41,6 @@ const Home = () => {
                     {/*    /!*<h1 className="abt-me-text">About Me</h1>*!/*/}
                     {/*    <About />*/}
                     {/*</div>*/}
-
-
 
                     {/*<div className="why_us" style={{padding:"2%"}}>*/}
 
@@ -79,7 +56,7 @@ const Home = () => {
                         {/*</div>*/}
                     {/*</div>*/}
                     <div>
-                        <h1 className="why_text">What customer say about us ?</h1>
+                        <h1 className="why_text">CLIENTS TESTIMONIALS</h1>
                         <Reviews />
                     </div>
 
@@ -88,26 +65,18 @@ const Home = () => {
                     {/*        <CustomerReviews />*/}
                     {/*    )}*/}
                     {/*</div>*/}
-
-
-
                     {/*<div className="contactForm" id="contact">*/}
                     {/*    <h3><i>*/}
                     {/*        For Queries and Claim Quote*/}
                     {/*    </i>*/}
-
                     {/*    </h3>*/}
                     {/*            <Button className="contact_btn" type="primary" onClick={handleOnclickContactButton}>{showForm ? 'Close Form' : 'Contact US'}</Button>*/}
-
                     {/*    {showForm &&(*/}
                     {/*        <ContactForm />*/}
                     {/*    )}*/}
                     {/*</div>*/}
-
                 </div>
             </div>
-
-
     )
 }
 
