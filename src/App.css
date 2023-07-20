@@ -290,11 +290,12 @@ body{
 
   /*Navbar*/
   .NavbarMenu{
-    font-size: 16px;
+    font-size: 18px;
     /*border: none;*/
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
+    padding-top: 1%;
     /*background-color:#F0E7E3;*/
 
   }
@@ -343,6 +344,9 @@ body{
   }
 
   /*Carousel prev and next*/
+  .Top-carousel{
+    padding-top:1%
+  }
   .carousel-buttons {
     position: absolute;
     top: 50%;
