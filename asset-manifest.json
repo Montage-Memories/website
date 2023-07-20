@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba74a633.css",
-    "main.js": "/static/js/main.e148c40e.js",
+    "main.css": "/static/css/main.f0e08cb2.css",
+    "main.js": "/static/js/main.c723e69a.js",
     "static/js/787.f055211e.chunk.js": "/static/js/787.f055211e.chunk.js",
     "static/media/P5.jpg": "/static/media/P5.6ccd7db411fb84c4c40a.jpg",
     "static/media/P1.jpg": "/static/media/P1.f9d4f4923cd774da07d0.jpg",
@@ -10,11 +10,11 @@
     "static/media/WEDDING THUMB.jpg": "/static/media/WEDDING THUMB.0fc3323377c516307867.jpg",
     "static/media/P4.jpg": "/static/media/P4.a5ccafece5e42565f098.jpg",
     "static/media/PORTFOLIO THUMB.jpg": "/static/media/PORTFOLIO THUMB.4edbf342724f6c113897.jpg",
-    "static/media/PROFILEPIC.jpg": "/static/media/PROFILEPIC.edbaa264de5a742365ab.jpg",
     "static/media/P6.JPG": "/static/media/P6.55e3cb31f3e43eeb9e41.JPG",
     "static/media/COMMERCIAL PHOTOGRAPHY.jpg": "/static/media/COMMERCIAL PHOTOGRAPHY.ef2eaf1035f76a9ecdeb.jpg",
     "static/media/POTRAIT PHOTOGRAPHY.jpg": "/static/media/POTRAIT PHOTOGRAPHY.147d0a28decf5c575ec2.jpg",
     "static/media/KIDS PHOTOGRAPHY.jpg": "/static/media/KIDS PHOTOGRAPHY.4a75ad759c10e7ebb44a.jpg",
+    "static/media/ABOUT US.jpg": "/static/media/ABOUT US.9fb847933942b5eb39e2.jpg",
     "static/media/MMS B.png": "/static/media/MMS B.55f34305c622e619cec3.png",
     "static/media/CARO 4.jpg": "/static/media/CARO 4.b706ebab2b936cf2971b.jpg",
     "static/media/CARO 3.jpg": "/static/media/CARO 3.5a8da8aedf59b8e69a2b.jpg",
@@ -25,12 +25,12 @@
     "static/media/BABYSHOOT THUMB.jpg": "/static/media/BABYSHOOT THUMB.8e9cbcdd2589e90b88a2.jpg",
     "static/media/PUBERTY THUMB.jpg": "/static/media/PUBERTY THUMB.dc8968e2a2c64295ba1e.jpg",
     "index.html": "/index.html",
-    "main.ba74a633.css.map": "/static/css/main.ba74a633.css.map",
-    "main.e148c40e.js.map": "/static/js/main.e148c40e.js.map",
+    "main.f0e08cb2.css.map": "/static/css/main.f0e08cb2.css.map",
+    "main.c723e69a.js.map": "/static/js/main.c723e69a.js.map",
     "787.f055211e.chunk.js.map": "/static/js/787.f055211e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba74a633.css",
-    "static/js/main.e148c40e.js"
+    "static/css/main.f0e08cb2.css",
+    "static/js/main.c723e69a.js"
   ]
 }
