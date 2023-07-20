@@ -27,17 +27,6 @@ const cardData = [
 
 ];
 const KidsPhoto = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            window.scrollTo(0, 0);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     return(
         <div>
             <div className="Kids-Container">

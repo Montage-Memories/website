@@ -28,17 +28,7 @@ const cardData = [
 
 ];
 const Portrait = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            window.scrollTo(0, 0);
-        };
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
         return(
         <div>
             <div className="Portrait-Container" style={{margin:"auto", height:"100%"}}>

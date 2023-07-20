@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import {Link} from "react-router-dom";
 import Video from "../Components/Video/Video";
 import Reviews from "../Components/Reviews/Reviews";
+import ContactForm from "../Components/Form/ContactForm";
 
 const Home = () => {
 
@@ -60,6 +61,11 @@ const Home = () => {
                         <Reviews />
                     </div>
 
+                    <div style={{backgroundColor: "white"}}>
+                        <div className="contactForm" id="contact">
+                            <ContactForm />
+                        </div>
+                    </div>
                     {/*<div>*/}
                     {/*    {showReview &&(*/}
                     {/*        <CustomerReviews />*/}

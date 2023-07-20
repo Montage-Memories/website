@@ -25,6 +25,17 @@ body{
   font-size: 10px;
 }
 
+
+.contact_container{
+  padding: 10%;
+  background-color: white;
+}
+.form-contact-page{
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 3%;
+  width:50%;
+  margin: auto;
+}
 .slidein {
   animation-duration: 3s;
   animation-name: slidein;
@@ -61,8 +72,12 @@ body{
   /*margin: auto;*/
   padding: 5%;
 }
-.Portrait-Container, .Kids-Container, .Commercial-Container{
-  padding: 2%;
+.Portrait-Container{
+  padding: 7% 3% 3% 3%;
+  margin: auto;
+}
+.Kids-Container, .Commercial-Container{
+  padding: 10% 3% 3% 3%;
   margin: auto;
 }
 .carousel{
@@ -327,7 +342,7 @@ body{
     background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as per your preference */
   }
   .abt-img{
-    height:600px;
+    height:700px;
     width:100%
   }
   .Abt-logo{

@@ -59,11 +59,7 @@ function App() {
                   </Routes>
               </Content>
 
-              <div style={{backgroundColor: "white"}}>
-                  <div className="contactForm" id="contact">
-                        <ContactForm />
-                  </div>
-              </div>
+
                   <Footers />
 
           </Layout>

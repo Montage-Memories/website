@@ -24,17 +24,7 @@ const cardData = [
 
 ];
 const Commercial = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            window.scrollTo(0, 0);
-        };
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     return(
         <div>
             <div className="Commercial-Container" >
@@ -68,6 +58,7 @@ const Commercial = () => {
 
                     ))}
                 </Row>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
         </div>
     )
