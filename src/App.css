@@ -9,33 +9,33 @@
 body{
   overflow-x: hidden;
 }
-.home, .Portrait-Container, .Commercial-Container, .Kids-Container {
+.home, .Portrait-Container, .Commercial-Container, .Kids-Container,.contact_container{
   /*margin-top: 5%;*/
   background-color: #ffffff;
   margin: auto;
   /*padding: 10px;*/
 
 }
-.about-container, .about-us-text{
-  font-family: Montserrat;
-  letter-spacing: 1px;
+.about-container, .about-us-text,.contact_container{
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 .name{
   font-size: 10px;
 }
 
+/*Contact Page*/
+.contact-details{
+  padding-left: 10%;
+}
 
-.contact_container{
-  padding: 10%;
-  background-color: white;
+.social-media-links-contact a {
+  color: #000;
+  font-size: 1.5rem;
+ margin: 0rem 1.5rem 0rem 0rem;
 }
-.form-contact-page{
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 3%;
-  width:50%;
-  margin: auto;
-}
+/*-------------------------------------------------------*/
+
 .slidein {
   animation-duration: 3s;
   animation-name: slidein;
@@ -119,20 +119,23 @@ body{
   width: 100%;
   /*height: 400px;*/
   padding: 6%;
+  margin-top: 5%;
   /*margin-top: 5%;*/
   text-align: center;
   color: #000;
   /*background-color: #F0E7E3;*/
-  background-color:#fdf6f7;
+  background-color:#ffffff;
   /*color: black;*/
   /*width: 200px;*/
   /*height: 200px;*/
   /*background-color: #fff;*/
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
   /*transform: rotateX(10deg) rotateY(10deg);*/
 }
-
+.gallery{
+  padding-top: 10%;
+}
 .view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn{
   height: 50px;
   width: 155px;
@@ -184,6 +187,17 @@ body{
 
 /*Menu*/
 @media (max-width:500px) {
+
+.Kids-Container,.contact_container,.Portrait-Container,.Commercial-Container{
+  padding-top: 25%;
+}
+  .Image-view,.app-gallery,.Video,.Portfolio,.Wedding,.Ariel,.Concert,.Corporate,.Maternity,.Puberty,.Babyshoot{
+    padding-top: 20%;
+  }
+  .form-contact-page{
+    width:80%;
+    margin: auto;
+  }
   .headerMenu{
     display: none;
   }
@@ -197,6 +211,12 @@ body{
     background-color:#F0E7E3;
     color:black;
     text-transform: uppercase;
+  }
+  .social-media-links-contact{
+    text-align: center;
+  }
+  .form-contact-page{
+    padding-top: 5%;
   }
   /*about image*/
   .abt-img{
@@ -243,6 +263,8 @@ body{
   .next-button:hover {
     color: #000000;
   }
+
+
 /*.carousel-img-wrapper{*/
 /*  height: 200px;*/
 /*  display: flex;*/
@@ -287,11 +309,29 @@ body{
     height: 100%;
     width :90%;
   }
-
+/*  Contact Page*/
+  .container {
+    flex-direction: column; /* Stack columns vertically on mobile */
+  }
 
 }
 @media (min-width:500px) {
 
+  .right-column {
+    flex: 1; /* Let the right column take up available space */
+    min-width: 50%; /* Set a minimum width for the right column */
+    /* Add other styles for the right column */
+    margin-left: 15%;
+  }
+
+  .contact_container{
+    padding-top: 7%;
+    background-color: white;
+  }
+  .form-contact-page{
+    width:50%;
+    margin: auto;
+  }
   .tumbnail-video{
     height:250px;
     width:80%;
@@ -302,7 +342,6 @@ body{
 .mbl-nav{
   display: none;
 }
-
   /*Navbar*/
   .NavbarMenu{
     font-size: 18px;
@@ -670,8 +709,24 @@ body{
   cursor: pointer;
   color: #000000;
 }
+/*Contact page*/
 
+.container {
+  display: flex; /* Use Flexbox for desktop layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
 
+.left-column {
+  flex: 1; /* Let the left column take up available space */
+  min-width: 50%; /* Set a minimum width for the left column */
+  /* Add other styles for the left column */
+}
+.right-column {
+  flex: 1; /* Let the right column take up available space */
+  min-width: 50%; /* Set a minimum width for the right column */
+  /* Add other styles for the right column */
+  /*margin-left: 15%;*/
+}
 
 
 

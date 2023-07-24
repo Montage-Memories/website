@@ -78,12 +78,12 @@ const Babyshoot = () => {
     ];
 
     return (
-        <div>
+        <div className="Babyshoot">
             {/*<div className="Backbutton">*/}
             {/*    /!*<BackButton />*!/*/}
             {/*    <h1>PORTFOLIO PHOTOGRAPHY </h1>*/}
             {/*</div>*/}
-            <div style={{padding:"1%", backgroundColor:"white"}}>
+            <div style={{padding:"10% 1% 1% 1%", backgroundColor:"white"}}>
                 <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
                     <Masonry columnsCount={3} gutter="10px">
                         {images.map((image, i) => (

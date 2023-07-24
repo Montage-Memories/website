@@ -106,7 +106,8 @@ const ImageView = () => {
         selectedDataset = dataset14;
     }
     return (
-        <div style={{margin:"auto",padding:"2%", backgroundColor:"white"}}>
+        <div className="Image-view">
+            <div style={{margin:"auto",padding:"10% 1% 1% 1%", backgroundColor:"white"}}>
                 <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
                     <Masonry columnsCount={3} gutter="0px">
                         {selectedDataset.map((item) => (
@@ -117,13 +118,15 @@ const ImageView = () => {
                                 loading="lazy"
                             />
                         ))}
-                             {/*<img key={item.id} src={item.imageUrl} alt="Gallery Image" />*/}
+                        {/*<img key={item.id} src={item.imageUrl} alt="Gallery Image" />*/}
                         {/*))}*/}
                     </Masonry>
                 </ResponsiveMasonry>
-                 {/*<img key={item.id} src={item.imageUrl} alt="Gallery Image" />*/}
+                {/*<img key={item.id} src={item.imageUrl} alt="Gallery Image" />*/}
 
+            </div>
         </div>
+
     );
     // Rest of the code...
 };

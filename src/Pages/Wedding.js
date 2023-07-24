@@ -19,7 +19,7 @@ const Wedding = ({history}) => {
         navigate(`/image/${datasetId}`);
     };
     return (
-        <div>
+        <div className="Wedding">
             {/*<div className="Backbutton">*/}
             {/*    <BackButton />*/}
             {/*</div>*/}

@@ -40,7 +40,8 @@ const images = [
 
     const Gallery = () => {
             return (
-                <div style={{padding:"1%", backgroundColor:"white", margin:"auto"}}>
+                <div className="app-gallery">
+                <div  style={{padding:"10% 1% 1% 1%", backgroundColor:"white", margin:"auto"}}>
                   <ResponsiveMasonry columnsCountBreakPoints={{350:1,750:2, 900:3}}>
                         <Masonry columnsCount={3} gutter="10px">
                             {images.map((image, i) => (
@@ -56,7 +57,7 @@ const images = [
                     </ResponsiveMasonry>
 
                 </div>
-
+                </div>
 
             )
 

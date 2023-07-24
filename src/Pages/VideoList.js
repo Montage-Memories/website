@@ -46,7 +46,7 @@ const VideoList = () => {
     ];
 
     return (
-        <div>
+        <div className="Video">
             {/*<div className="Backbutton">*/}
             {/*    <BackButton />*/}
             {/*</div>*/}

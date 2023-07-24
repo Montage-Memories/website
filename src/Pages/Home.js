@@ -2,7 +2,6 @@ import '../App.css'
 import Cards from "../Components/Cards/Cards";
 import {Button} from "antd";
 import Carousels from "../Components/Carousels/Carousels";
-import Navbar from "../Components/Navbar/Navbar";
 import {Link} from "react-router-dom";
 import Video from "../Components/Video/Video";
 import Reviews from "../Components/Reviews/Reviews";
@@ -12,7 +11,6 @@ const Home = () => {
 
     return(
             <div>
-                {/*<Navbar />*/}
 
                 <div className="home" >
                     <div className="carousel">
@@ -29,8 +27,8 @@ const Home = () => {
                     </div>
 
                     <div className="our_services" >
-                        <h1> OUR SERVICES </h1>
-                        <Cards />
+                        <h1> OUR SERVICES </h1><br/><br/>
+                        <Cards  />
                     </div>
 
                     <div className="videos">
@@ -57,7 +55,7 @@ const Home = () => {
                         {/*</div>*/}
                     {/*</div>*/}
                     <div>
-                        <h1 className="why_text">CLIENTS TESTIMONIALS</h1>
+                        <h1 className="why_text">CLIENT TESTIMONIALS</h1>
                         <Reviews />
                     </div>
 
