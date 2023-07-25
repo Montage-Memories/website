@@ -24,6 +24,11 @@ const  items=[
             key: "works",
             url:'/works'
         },
+    {
+        label: "Films",
+        key: "films",
+        url:'/films'
+    },
         {
             label: "Contact",
             key: "contact",
@@ -41,7 +46,7 @@ const Navbar = () => {
             className='menuIcon'
             >
                 <img src={logo} style={{padding: "10px", height:"100%", width:"20%", float:"left"}} />
-                <MenuOutlined style={{color:"black",fontSize:"30px", float:"right",padding:"12px"}}
+                <MenuOutlined style={{color:"black",fontSize:"20px", float:"right",padding:"12px"}}
                               onClick={() => {
                                 setOpenMenu(true);
                 }}
@@ -94,7 +99,7 @@ function AppMenu({isInline=false}){
     return(
         <div>
         <Header className="header" style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%'}}>
-            <img  src={logo} style={{padding: "10px", height:"100%", width:"8%", float:"left"}} />
+            <img  src={logo} style={{padding: "10px", height:"60px", width:"8%", float:"left"}} />
             <Menu
                 theme={"dark"}
                 mode={isInline?"inline":"horizontal"}

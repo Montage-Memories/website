@@ -37,11 +37,26 @@ const VideoList = () => {
             title: 'Video 2',
             url: "https://www.youtube.com/embed/h2_n5mQk1do",
         },
-        // {
-        //     id: 7,
-        //     title: 'Video 2',
-        //     url: "https://www.youtube.com/embed/5gYS0aBPZjg",
-        // },
+        {
+            id: 7,
+            title: 'Video 2',
+            url: "https://www.youtube.com/embed/Jzl1BQgeKQ4",
+        },
+        {
+            id: 8,
+            title: 'Video 2',
+            url: "https://www.youtube.com/embed/pEY_x0jCVt8",
+        },
+        {
+            id: 9,
+            title: 'Video 2',
+            url: "https://www.youtube.com/embed/PnQ20bITTec",
+        },
+        {
+            id: 10,
+            title: 'Video 2',
+            url: "https://www.youtube.com/embed/PjrCpS09Tx0",
+        },
         // Add more video objects as needed
     ];
 

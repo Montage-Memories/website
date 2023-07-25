@@ -6,58 +6,70 @@ const Reviews = () => {
     const reviews = [
         {
             id: 1,
-            author: 'John Doe',
-            comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'ASHOK',
+            comment: 'The work done by Montage Memories Team must be appreciated,' +
+                ' the function took long time finish but still they waited until midnight ' +
+                'for us with smiling face and took pics. ' +
+                'The team is calm and composed and very potential...' +
+                'Super happy with the work done by Montage Memories ',
             rating: 4.5,
         },
         {
             id: 2,
-            author: 'Jane Smith',
-            comment: 'Praesent gravida justo in urna faucibus, sit amet sollicitudin libero hendrerit.',
+            author: 'JAYA',
+            comment: 'Thank you for capturing such an amazing memorable and candid pics perfectly...' +
+                'we highly recommend Montage Memories.' +
+                'Keep up the great work!',
             rating: 3.8,
         },
         {
             id: 3,
-            author: 'Mike Johnson',
-            comment: 'Sed auctor urna a eros feugiat, nec interdum metus luctus.',
+            author: 'AKALYA',
+            comment: 'I just wanted to say biggest thanks to you for your amazing work on my brother wedding...' +
+                'You guys put so much effort and made us feel more comfortable and special. ',
             rating: 5.0,
         },
         {
             id: 4,
-            author: 'John Doe',
-            comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'MANISHA',
+            comment: 'Montage Memories by saran is a young and enthusiastic team...' +
+                'The work done by them fore our baby shower events were outstanding.' +
+                'Thank you for capturing each and every moments.',
             rating: 4.5,
         },
         {
             id: 5,
-            author: 'Jane Smith',
-            comment: 'Praesent gravida justo in urna faucibus, sit amet sollicitudin libero hendrerit.',
+            author: 'INDHU',
+            comment: 'Montage Memories really am so happy that you guys made my day...' +
+                'such an innovation, patience almost probably a friendly interaction of you' +
+                'felt us happy and comfort shoot without any camera conscious...' +
+                'love your way of handling the crowd and couples(Indhu & Aravind)',
             rating: 3.8,
         },
-        {
-            id: 6,
-            author: 'Mike Johnson',
-            comment: 'Sed auctor urna a eros feugiat, nec interdum metus luctus.',
-            rating: 5.0,
-        },
-        {
-            id: 7,
-            author: 'John Doe',
-            comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            rating: 4.5,
-        },
-        {
-            id: 8,
-            author: 'Jane Smith',
-            comment: 'Praesent gravida justo in urna faucibus, sit amet sollicitudin libero hendrerit.',
-            rating: 3.8,
-        },
-        {
-            id: 9,
-            author: 'Mike Johnson',
-            comment: 'Sed auctor urna a eros feugiat, nec interdum metus luctus.',
-            rating: 5.0,
-        },
+        // {
+        //     id: 6,
+        //     author: 'Mike Johnson',
+        //     comment: 'Sed auctor urna a eros feugiat, nec interdum metus luctus.',
+        //     rating: 5.0,
+        // },
+        // {
+        //     id: 7,
+        //     author: 'John Doe',
+        //     comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        //     rating: 4.5,
+        // },
+        // {
+        //     id: 8,
+        //     author: 'Jane Smith',
+        //     comment: 'Praesent gravida justo in urna faucibus, sit amet sollicitudin libero hendrerit.',
+        //     rating: 3.8,
+        // },
+        // {
+        //     id: 9,
+        //     author: 'Mike Johnson',
+        //     comment: 'Sed auctor urna a eros feugiat, nec interdum metus luctus.',
+        //     rating: 5.0,
+        // },
         // Your array of customer reviews
     ];
 
@@ -73,7 +85,7 @@ const Reviews = () => {
 
     return (
         <div className="reviews-container" style={{margin:"auto"}}>
-            <Row justify="center" align="middle" gutter={[20, 20]}>
+            <Row justify="center" align="middle" gutter={[10, 10]}>
                 <Col xs={1} sm={1} md={8} lg={1} xl={1}>
                     <LeftOutlined className="arrow-icon" onClick={handlePreviousCard} />
                 </Col>

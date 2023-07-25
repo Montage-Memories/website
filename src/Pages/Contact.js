@@ -34,7 +34,7 @@ const Contact = () => {
             <div className="container">
                 <div className="contact-details">
                     <h1 style={{textAlign:"center"}}>CONTACT DETAILS</h1>
-                            <Text>Email: montangememories23@gmail.com</Text>
+                            <Text>Email : montangememories23@gmail.com</Text>
                             <br />
                             <Text>Phone: +91 93844 46512</Text>
                             <br />

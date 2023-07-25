@@ -56,7 +56,10 @@ const Home = () => {
                     {/*</div>*/}
                     <div>
                         <h1 className="why_text">CLIENT TESTIMONIALS</h1>
-                        <Reviews />
+                        <div className="review">
+                            <Reviews/>
+                        </div>
+
                     </div>
 
                     <div style={{backgroundColor: "white"}}>

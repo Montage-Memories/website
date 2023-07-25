@@ -1,12 +1,10 @@
-import ContactForm from "../Components/Form/ContactForm";
+// import ContactForm from "../Components/Form/ContactForm";
 import {Card, Col, Row} from "antd";
 import {Link} from "react-router-dom";
 import Meta from "antd/es/card/Meta";
 import React from "react";
 import portfolio from "../Images/Thumbnail/PORTFOLIO THUMB.jpg";
 import wedding from "../Images/Thumbnail/WEDDING THUMB.jpg";
-import Commercial from "./Commercial";
-import KidsPhoto from "./KidPhoto";
 import maternity from "../Images/Thumbnail/MATERNITY THUMB.jpg";
 import puberty from "../Images/Thumbnail/PUBERTY THUMB.jpg";
 import babyshoot from "../Images/Thumbnail/BABYSHOOT THUMB.jpg";
@@ -67,7 +65,7 @@ const Works = () => {
                         <Link to= {card.url}>
                             <Card className="cards"
                                   cover={
-                                      <img alt="example" src={card.imageUrl} loading="lazy" height="250px"
+                                      <img alt="example" src={card.imageUrl} loading="lazy" height="280px"
                                       />
                                   }
                                   style={{alignItems:"center"}}

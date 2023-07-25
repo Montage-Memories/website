@@ -76,14 +76,19 @@ body{
   padding: 7% 3% 3% 3%;
   margin: auto;
 }
-.Kids-Container, .Commercial-Container,.Works-Container{
-  padding: 10% 3% 3% 3%;
+.Kids-Container, .Commercial-Container{
+  padding: 5% 3% 3% 3%;
+  margin: auto;
+  background-color: white;
+}
+.Works-Container{
+  padding: 7% 3% 3% 3%;
   margin: auto;
   background-color: white;
 }
 .carousel{
   margin: auto;
-  padding-top:5%;
+  padding-top:3%;
   padding-bottom: 5%;
   width: 100%;
 
@@ -137,7 +142,7 @@ body{
 .gallery{
   padding-top: 10%;
 }
-.view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn{
+.view_btn,.contact_btn,.view_review_btn,.watch_btn,.bck_btn,.View-more{
   height: 50px;
   width: 155px;
   border-radius: 3px;
@@ -196,6 +201,9 @@ body{
   .Image-view,.app-gallery,.Video,.Portfolio,.Wedding,.Ariel,.Concert,.Corporate,.Maternity,.Puberty,.Babyshoot{
     padding-top: 20%;
   }
+  .review{
+    padding-top: 10%;
+  }
   .form-contact-page{
     width:80%;
     margin: auto;
@@ -240,7 +248,8 @@ body{
   }
 
   .contactForm{
-    margin-right: 90%;
+    margin-right: 58%;
+    margin-top:12%;
   }
   /*Carousel prev and next*/
   .carousel-buttons {
@@ -315,6 +324,7 @@ body{
   .container {
     flex-direction: column; /* Stack columns vertically on mobile */
   }
+
 
 }
 @media (min-width:500px) {
@@ -394,9 +404,6 @@ body{
     height:90px;
     padding-top: 2%;
     font-size: 30px;
-  }
-  .abt-cont{
-    padding-top: 1%;
   }
 
   /*Carousel prev and next*/
@@ -617,6 +624,8 @@ body{
 .Contact-Form{
   width: 70%;
   margin: auto;
+  /*position: fixed;*/
+  z-index: 1;
 }
 /*img-card*/
 

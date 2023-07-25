@@ -35,12 +35,14 @@ const AppFooter = () => {
             </Row><br/>
             <Row>
                 <Col span={24}>
-                    <div >
-                        <a style={{color:"#000"}} href="/about">About</a>
+                    <div className="footer-link">
+                        <a style={{color:"#000", fontSize:"12px"}} href="/about">About</a>
                         <span style={{ margin: "0 8px" }}>|</span>
-                        <a style={{color:"#000"}} href="/contact">Contact</a>
+                        <a style={{color:"#000",fontSize:"12px"}} href="/contact">Contact</a>
                         <span style={{ margin: "0 8px" }}>|</span>
-                        <a style={{color:"#000"}} href="/works">Our Services</a>
+                        <a style={{color:"#000",fontSize:"12px"}} href="/works">Works</a>
+                        <span style={{ margin: "0 8px" }}>|</span>
+                        <a style={{color:"#000",fontSize:"12px"}} href="/films">Films</a>
                         {/* Add more links as needed */}
                     </div>
                 </Col>

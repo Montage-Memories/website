@@ -58,7 +58,7 @@ const Commercial = () => {
 
                     ))}
                 </Row>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>*/}
             </div>
         </div>
     )

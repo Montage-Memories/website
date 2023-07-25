@@ -30,7 +30,7 @@ const About = () => {
 
             <div className="abt-cont" style={{margin:"auto",backgroundColor:"#ffffff"}}>
 
-                    <p style={{backgroundColor:"#000000", color:"#ffffff",textAlign:"center", marginTop:"7%"}} className="about-us-text" >ABOUT US</p>
+                    <p style={{backgroundColor:"#000000", color:"#ffffff",textAlign:"center", marginTop:"4%"}} className="about-us-text" >ABOUT US</p>
                 <br />
                 <div style={{textAlign:"center", paddingTop:"3%"}}>
                     <img className="Abt-logo" src={Logo} alt="Logo"/>
