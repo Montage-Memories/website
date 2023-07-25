@@ -76,9 +76,10 @@ body{
   padding: 7% 3% 3% 3%;
   margin: auto;
 }
-.Kids-Container, .Commercial-Container{
+.Kids-Container, .Commercial-Container,.Works-Container{
   padding: 10% 3% 3% 3%;
   margin: auto;
+  background-color: white;
 }
 .carousel{
   margin: auto;
@@ -188,8 +189,9 @@ body{
 /*Menu*/
 @media (max-width:500px) {
 
-.Kids-Container,.contact_container,.Portrait-Container,.Commercial-Container{
+.Kids-Container,.Works-Container,.contact_container,.Portrait-Container,.Commercial-Container{
   padding-top: 25%;
+  background-color: white;
 }
   .Image-view,.app-gallery,.Video,.Portfolio,.Wedding,.Ariel,.Concert,.Corporate,.Maternity,.Puberty,.Babyshoot{
     padding-top: 20%;
@@ -394,12 +396,12 @@ body{
     font-size: 30px;
   }
   .abt-cont{
-    padding-top: 5%;
+    padding-top: 1%;
   }
 
   /*Carousel prev and next*/
   .Top-carousel{
-    padding-top:1%
+    padding-top:2%
   }
   .carousel-buttons {
     position: absolute;

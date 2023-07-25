@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Layout, Row, Col, Typography, Button} from 'antd';
-import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined } from '@ant-design/icons';
+import { FacebookOutlined, InstagramOutlined, YoutubeOutlined,  WhatsAppOutlined,TwitterOutlined} from '@ant-design/icons';
 import '../../App.css'
 import {Link} from "react-router-dom";
 const { Footer } = Layout;
@@ -11,56 +11,44 @@ const AppFooter = () => {
         // Replace the placeholder number with your WhatsApp number
         window.open('https://wa.me/9384446512', '_blank');
     };
-    return (
-        <Footer className="app-footer">
-            <div className="app-footer-content">
-                <Row gutter={[32, 16]}>
-                    <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-                        <div className="app-footer-section">
-                            <Title level={3}>MONTAGE MEMORIES</Title>
-                            <Text>
-                                Memories By Saran <br />
-                            </Text>
-                        </div>
-                    </Col>
-                    {/*<Col xs={24} sm={24} md={12} lg={12} xl={12}>*/}
-                    {/*    <div className="app-footer-section">*/}
-                    {/*        <Title level={4}>Contact</Title>*/}
-                    {/*        <Text>Email: montangememories23@gmail.com</Text>*/}
-                    {/*        <br />*/}
-                    {/*        <Text>Phone: +91 93844 46512</Text>*/}
-                    {/*        <br />*/}
-                    {/*        <Text>Phone: +91 84899 93666</Text>*/}
-                    {/*    </div>*/}
-                    {/*</Col>*/}
-                    <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                        <div className="app-footer-section">
-                            <Title level={4}>Follow Us</Title>
-                            <div className="social-media-links">
-                                <a href="https://www.facebook.com/montagememories23?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                                    <FacebookOutlined />
-                                </a>
-                                {/*<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">*/}
-                                {/*    <TwitterOutlined />*/}
-                                {/*</a>*/}
-                                <a href="https://www.instagram.com/montage_memories/" target="_blank" rel="noopener noreferrer">
-                                    <InstagramOutlined />
-                                </a>
-                                <a href="https://www.youtube.com/@framesbysaran" target="_blank" rel="noopener noreferrer">
-                                    <YoutubeOutlined />
-                                </a>
-                                <a onClick={handleWhatsAppClick}>
-                                    <WhatsAppOutlined />
-                                </a>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-            <div className="app-footer-bottom">
-                <Text type="secondary">&copy; 2023 Your Website. All Rights Reserved.</Text>
-            </div>
 
+    return (
+        <Footer style={{ textAlign: "center", backgroundColor:"none" }}>
+            <Row>
+                <Col span={24}>
+                    <a href="https://www.facebook.com/montagememories23?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                        <FacebookOutlined style={{ fontSize: "24px", margin: "0 8px", color:"#000" }} />
+                    </a>
+                    {/*<a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">*/}
+                    {/*    <TwitterOutlined style={{ fontSize: "24px", margin: "0 8px", color:"#000"}} />*/}
+                    {/*</a>*/}
+                    <a href="https://www.instagram.com/montage_memories/" target="_blank" rel="noopener noreferrer">
+                        <InstagramOutlined style={{ fontSize: "24px", margin: "0 8px", color:"#000" }} />
+                    </a>
+                    <a href="https://www.youtube.com/@framesbysaran" target="_blank" rel="noopener noreferrer">
+                        <YoutubeOutlined style={{ fontSize: "24px", margin: "0 8px", color:"#000" }} />
+                    </a>
+                    <a onClick={handleWhatsAppClick}>
+                        <WhatsAppOutlined style={{ fontSize: "24px", margin: "0 8px", color:"black"}} />
+                    </a>
+                </Col>
+            </Row><br/>
+            <Row>
+                <Col span={24}>
+                    <div >
+                        <a style={{color:"#000"}} href="/about">About</a>
+                        <span style={{ margin: "0 8px" }}>|</span>
+                        <a style={{color:"#000"}} href="/contact">Contact</a>
+                        <span style={{ margin: "0 8px" }}>|</span>
+                        <a style={{color:"#000"}} href="/works">Our Services</a>
+                        {/* Add more links as needed */}
+                    </div>
+                </Col>
+            </Row><br/>
+            <div style={{backgroundColor:"#392313", color:"#fff",width:"100%", height:"50px",paddingTop:"1%"}}>
+                {/* Your website footer content here */}
+                © {new Date().getFullYear()} Your Website Name. All rights reserved.
+            </div>
         </Footer>
     );
 };

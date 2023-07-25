@@ -1,9 +1,93 @@
 import ContactForm from "../Components/Form/ContactForm";
+import {Card, Col, Row} from "antd";
+import {Link} from "react-router-dom";
+import Meta from "antd/es/card/Meta";
+import React from "react";
+import portfolio from "../Images/Thumbnail/PORTFOLIO THUMB.jpg";
+import wedding from "../Images/Thumbnail/WEDDING THUMB.jpg";
+import Commercial from "./Commercial";
+import KidsPhoto from "./KidPhoto";
+import maternity from "../Images/Thumbnail/MATERNITY THUMB.jpg";
+import puberty from "../Images/Thumbnail/PUBERTY THUMB.jpg";
+import babyshoot from "../Images/Thumbnail/BABYSHOOT THUMB.jpg";
 
+const cardData = [
+    {
+        id: 1,
+        imageUrl:portfolio,
+        title:'Portfolio',
+        url:'/portfolio' },
+    {
+        id: 2,
+        imageUrl:wedding,
+        title:'Wedding Photography',
+        url:'/wedding'},
+    {
+        id: 3,
+        imageUrl:"https://drive.google.com/uc?id=1FoVm5QfhFkj8lTpmdILnzltpfyIfbEeW",
+        title:'Ariel Photography',
+        url:'/ariel' },
+    {
+        id: 4,
+        imageUrl:"https://drive.google.com/uc?id=1Zc0a-ec4o-4YLKMvcCovAMHdeCtUaVws",
+        title:'Concert Photography',
+        url:'/concert'},
+    {
+        id: 5,
+        imageUrl: "https://drive.google.com/uc?id=1qhuRQ0na3ipq4HZTJOoY4GRkAkOStQz0",
+        title:'Corporate Events',
+        url:'/corporate'},
+    {
+        id: 6,
+        imageUrl:maternity,
+        title:'MATERNITY',
+        url:'/maternity' },
+    {
+        id: 7,
+        imageUrl:puberty,
+        title:'PUBERTY',
+        url:'/puberty'},
+    {
+        id: 8,
+        imageUrl: babyshoot,
+        title:'BABYSHOOT',
+        url:'/babyshoot'},
+    ]
 const Works = () => {
     return(
-        <div>
-            <ContactForm />
+        <div className="Works-Container">
+            <Row gutter={[16, 16]}>
+                {cardData.map(card => (
+                    <Col xs={24} sm={24} md={8} lg={8} key={card.id}>
+                        {/*<Card title={card.title}>*/}
+                        {/*    <div className="card-image-container">*/}
+                        {/*        <img src={card.imageUrl} alt={card.title} />*/}
+                        {/*    </div>*/}
+                        {/*</Card>*/}
+                        <Link to= {card.url}>
+                            <Card className="cards"
+                                  cover={
+                                      <img alt="example" src={card.imageUrl} loading="lazy" height="250px"
+                                      />
+                                  }
+                                  style={{alignItems:"center"}}
+                            >
+                                <Meta className="cards-name"
+                                      title={card.title}
+                                      style={{textAlign:"center"}}
+                                    // description="This is the description"
+                                />
+                                {/*<div className="content">{card.content}</div>*/}
+                            </Card>
+
+                        </Link>
+
+                    </Col>
+
+
+                ))}
+            </Row>
+
         </div>
     )
 }
