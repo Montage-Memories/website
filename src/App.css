@@ -202,7 +202,7 @@ body{
     padding-top: 20%;
   }
   .review{
-    padding-top: 10%;
+    padding-top: 20%;
   }
   .form-contact-page{
     width:80%;
@@ -244,12 +244,12 @@ body{
   }
 
   .abt-cont{
-    padding-top: 20%;
+    padding-top: 25%;
   }
 
   .contactForm{
-    margin-right: 58%;
-    margin-top:12%;
+    margin-right: 60%;
+    margin-top:30%;
   }
   /*Carousel prev and next*/
   .carousel-buttons {

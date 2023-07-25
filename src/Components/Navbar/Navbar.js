@@ -99,7 +99,7 @@ function AppMenu({isInline=false}){
     return(
         <div>
         <Header className="header" style={{ position: 'fixed', zIndex: 1, height:"10%",width: '100%'}}>
-            <img  src={logo} style={{padding: "10px", height:"60px", width:"8%", float:"left"}} />
+            <img  src={logo} style={{padding: "10px", height:"60px", width:"7%", float:"left"}} />
             <Menu
                 theme={"dark"}
                 mode={isInline?"inline":"horizontal"}
