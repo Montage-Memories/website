@@ -49,7 +49,7 @@ const AppFooter = () => {
             </Row><br/>
             <div style={{backgroundColor:"#392313", color:"#fff",width:"100%", height:"50px",paddingTop:"1%"}}>
                 {/* Your website footer content here */}
-                © {new Date().getFullYear()} Your Website Name. All rights reserved.
+                © {new Date().getFullYear()} Montage Memories. All rights reserved.
             </div>
         </Footer>
     );
